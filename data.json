@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 1,
     "days_remaining": 1519,
-    "last_updated": "2026-09-21 19:01:11"
+    "last_updated": "2026-09-21 19:35:44"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,9 +39,9 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 2.3,
-    "remaining_hours": 4997.7,
-    "progress_percent": 0.05,
+    "total_hours": 2.8,
+    "remaining_hours": 4997.2,
+    "progress_percent": 0.06,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
@@ -49,11 +49,11 @@
       "listening": 2.1,
       "speaking": 0.0,
       "speaking_real": 0.0,
-      "reading": 0.0,
+      "reading": 0.5,
       "writing": 0.2,
       "other": 0.0
     },
-    "vocabulary_count": 1,
+    "vocabulary_count": 14,
     "reading_notes_count": 1
   },
   "phases": [
@@ -129,14 +129,14 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 2.3,
+      "hours": 2.8,
       "target": 33.0
     }
   },
   "daily": {
     "2026-09-21": {
       "date": "2026-09-21",
-      "hours": 2.3,
+      "hours": 2.8,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -152,8 +152,8 @@
         },
         {
           "name": "Reading / Grammar / Vocab",
-          "hours": 0.0,
-          "completed": false,
+          "hours": 0.5,
+          "completed": true,
           "is_real": false
         },
         {
@@ -163,7 +163,7 @@
           "is_real": false
         }
       ],
-      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.)"
+      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.); Vocab session: business/legal idioms from Suits dialogue (in jeopardy, bad faith, due and payable, closer, etc.) — see `notes/vocabulary.md`."
     },
     "2026-09-22": {
       "date": "2026-09-22",
@@ -397,6 +397,84 @@
       "meaning": "（その日の）仕事を切り上げる、お開きにする",
       "context": "予定していた作業や活動を「今日はここまで」と終了するときによく使う口語・ビジネス定番表現。",
       "example": "*意味"
+    },
+    {
+      "term": "handle + 人",
+      "meaning": "（人）をうまく扱う、対処する",
+      "context": "難しい相手や状況に対して「自分がなんとかする」という自信を示す時に使う。ビジネス交渉シーンで頻出。",
+      "example": "*意味"
+    },
+    {
+      "term": "in jeopardy",
+      "meaning": "危機に瀕している、危うい状態にある",
+      "context": "契約・案件・立場などが「ダメになりかねない」状態を表す、ビジネス・法律文脈の定番表現。",
+      "example": "*意味"
+    },
+    {
+      "term": "figure out",
+      "meaning": "理解する、解明する、把握する",
+      "context": "「考えて答え・理由を見つけ出す」という動的なニュアンス。ビジネスでも日常でも超頻出の句動詞。",
+      "example": "*意味"
+    },
+    {
+      "term": "in the interim",
+      "meaning": "その間に、それまでの間",
+      "context": "2つの出来事・時点の「間の期間」を指すややフォーマルな表現。ビジネス文書・契約context でもよく使う。",
+      "example": "*意味"
+    },
+    {
+      "term": "(deal / act) in bad faith",
+      "meaning": "不誠実に、悪意を持って（契約・交渉を）扱う",
+      "context": "交渉・契約の場面で「相手が誠実に対応していない」と非難する時のビジネス/法律定番表現。このエピソードだけで3回変化形で登場（bad faith bullshit / dealing in bad faith / operate in bad faith）＝重要表現。",
+      "example": "*意味"
+    },
+    {
+      "term": "honorary position",
+      "meaning": "名誉職（実権を伴わない肩書きだけの役職）",
+      "context": "「名前だけの地位」というニュアンスを含むことが多い。",
+      "example": "*意味"
+    },
+    {
+      "term": "have a grasp on",
+      "meaning": "～を把握している、理解している",
+      "context": "状況・情報をきちんと理解できているかを表す。ビジネスで進捗確認する時にも使える。",
+      "example": "*意味"
+    },
+    {
+      "term": "why the hell (not) / where the hell",
+      "meaning": "一体全体なぜ～ / 一体どこで～（\"the hell\" は疑問詞を強調する口語表現）",
+      "context": "くだけた・やや荒っぽい強調。フォーマルな場では避ける。苛立ちや驚きを表す。",
+      "example": "*意味"
+    },
+    {
+      "term": "I see how it is",
+      "meaning": "なるほど、そういうことか（相手の本音・態度を察した時の皮肉っぽい相槌）",
+      "context": "相手の裏切り・態度の変化に気づいた時に使う、やや皮肉のこもった表現。",
+      "example": "*意味"
+    },
+    {
+      "term": "due and payable",
+      "meaning": "（支払期日が到来し）支払われるべき状態にある",
+      "context": "契約・請求書などの法律・金融文脈の定型表現。セットで使われる。",
+      "example": "*意味"
+    },
+    {
+      "term": "wire transfer / escrow / payment in full",
+      "meaning": "wire transfer=電信送金、escrow=エスクロー（第三者預託口座）、payment in full=全額支払い",
+      "context": "契約・決済まわりのビジネス語彙セット。",
+      "example": "*意味"
+    },
+    {
+      "term": "get screwed",
+      "meaning": "酷い目に遭う、騙される、割を食う",
+      "context": "かなりくだけた俗語。ビジネスの公式な場では使わない方がいい（同僚との雑談・ドラマのセリフレベル）。",
+      "example": "*意味"
+    },
+    {
+      "term": "closer",
+      "meaning": "（交渉・営業で）契約を決める人、クロージングが得意な人",
+      "context": "セールス・交渉の文脈でよく使われる人物評。",
+      "example": "*意味"
     }
   ],
   "reading_notes": [
@@ -428,8 +506,8 @@
     "currency": "JPY",
     "total_invested_yen": 1590,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 2.3,
-    "cost_per_hour_yen": 691.3,
+    "total_hours_from_paid_tools": 2.8,
+    "cost_per_hour_yen": 567.86,
     "breakdown": [
       {
         "id": "netflix",
