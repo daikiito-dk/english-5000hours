@@ -1,7 +1,13 @@
 # 🚀 English 5,000 Hours Mastery Project
 
+[![GitHub Pages](https://img.shields.io/badge/Live_Dashboard-GitHub_Pages-6366f1?style=for-the-badge&logo=githubpages&logoColor=white)](https://daikiito-dk.github.io/english-5000hours/)
+[![Status](https://img.shields.io/badge/Status-Phase_1_Active-10b981?style=for-the-badge)](https://daikiito-dk.github.io/english-5000hours/)
+
 > **"Consistency is the DNA of mastery."**  
 > 英語のインプット・アウトプットを積み重ね、ビジネス・日常においてネイティブと対等に議論・発信ができる思考・運用能力（CEFR C1〜C2レベル）を定着させる長期学習プロジェクト。
+
+🌐 **Web Dashboard**: [https://daikiito-dk.github.io/english-5000hours/](https://daikiito-dk.github.io/english-5000hours/)
+
 
 ---
 
