@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English 5,000 Hours Mastery Dashboard</title>
+  <meta name="description" content="Track progress, daily logs, and milestones for the 5,000-Hour English Mastery Project (2026-2030).">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG Gradient definitions -->
+  <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+    <linearGradient id="ring-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </svg>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">🚀</div>
+        <div class="brand-text">
+          <h1>English 5,000h Mastery</h1>
+          <p>Target: 2030-11-18 • 1,519 Days Challenge</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <div class="badge badge-pulse">
+          <span class="pulse-dot"></span>
+          <span id="active-day-badge">Day 1</span>
+        </div>
+        <button id="theme-toggle" class="btn-icon" title="Toggle Theme" aria-label="Toggle Theme">
+          🌓
+        </button>
+        <a href="https://github.com/daikiito-dk/english-5000hours" target="_blank" rel="noopener" class="btn-icon" title="GitHub Repository" aria-label="GitHub Repository">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Top Hero: Progress Ring + Key Metrics -->
+    <section class="hero-grid">
+      <!-- Main Progress Ring -->
+      <div class="glass-card main-ring-card">
+        <div class="ring-container">
+          <svg class="progress-ring" width="220" height="220">
+            <circle class="ring-bg" stroke-width="14" fill="transparent" r="92" cx="110" cy="110" />
+            <circle id="ring-circle" class="ring-indicator" stroke-width="14" fill="transparent" r="92" cx="110" cy="110" stroke-dasharray="578.05" stroke-dashoffset="578.05" />
+          </svg>
+          <div class="ring-content">
+            <span id="hero-percent" class="ring-percent">0.0%</span>
+            <span class="ring-subtext">COMPLETED</span>
+          </div>
+        </div>
+        <div class="ring-numbers">
+          <span id="hero-logged-hours" class="current-hours">0.0</span>
+          <span class="total-hours">/ 5,000.0 hrs</span>
+        </div>
+      </div>
+
+      <!-- 4 KPI Cards -->
+      <div class="kpi-grid">
+        <!-- Target Pace -->
+        <div class="glass-card kpi-card">
+          <div class="kpi-card-header">
+            <span class="kpi-title">Daily Pace</span>
+            <div class="kpi-icon icon-purple">⏱️</div>
+          </div>
+          <div class="kpi-value"><span id="kpi-daily-pace">3.3</span> <small style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">hrs/day</small></div>
+          <div class="kpi-desc">Required to finish by <strong>Nov 2030</strong></div>
+        </div>
+
+        <!-- Days Countdown -->
+        <div class="glass-card kpi-card">
+          <div class="kpi-card-header">
+            <span class="kpi-title">Days Countdown</span>
+            <div class="kpi-icon icon-cyan">⏳</div>
+          </div>
+          <div class="kpi-value"><span id="kpi-days-remaining">1,518</span> <small style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">days</small></div>
+          <div class="kpi-desc">Elapsed: <span id="kpi-days-elapsed">1</span> / 1,519 days</div>
+        </div>
+
+        <!-- Current Phase -->
+        <div class="glass-card kpi-card">
+          <div class="kpi-card-header">
+            <span class="kpi-title">Current Phase</span>
+            <div class="kpi-icon icon-emerald">🌱</div>
+          </div>
+          <div class="kpi-value" style="font-size: 1.45rem;" id="kpi-phase-title">Phase 1</div>
+          <div class="kpi-desc">基礎再構築 (0 〜 1,000 hrs)</div>
+        </div>
+
+        <!-- Knowledge Items -->
+        <div class="glass-card kpi-card">
+          <div class="kpi-card-header">
+            <span class="kpi-title">Knowledge Stored</span>
+            <div class="kpi-icon icon-amber">💡</div>
+          </div>
+          <div class="kpi-value"><span id="kpi-vocab-count">0</span> <small style="font-size: 0.9rem; font-weight: normal; color: var(--text-muted);">terms</small></div>
+          <div class="kpi-desc"><span id="kpi-reading-count">0</span> reading notes logged</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Phase Roadmap -->
+    <section class="phases-section">
+      <div class="section-header">
+        <h2 class="section-title">🗺️ 4-Phase Master Roadmap</h2>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Total Goal: CEFR C1〜C2 Fluency</span>
+      </div>
+      <div class="phases-grid" id="phases-container">
+        <!-- Dynamically rendered or pre-populated -->
+      </div>
+    </section>
+
+    <!-- Skills Breakdown & Calendar Heatmap -->
+    <section class="middle-grid">
+      <!-- Category Skills Breakdown -->
+      <div class="glass-card skills-card">
+        <div class="section-header">
+          <h2 class="section-title">📊 Skill Breakdown</h2>
+          <span style="font-size: 0.85rem; color: var(--text-muted);" id="total-skills-hours">0.0 hrs</span>
+        </div>
+        <div class="skills-list" id="skills-breakdown">
+          <!-- Listening -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-label">🎧 Listening / Podcast</span>
+              <span class="skill-hours" id="hours-listening">0.0h (0%)</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill fill-listening" id="bar-listening" style="width: 0%"></div>
+            </div>
+          </div>
+          <!-- Speaking -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-label">🗣️ Speaking / Conversation</span>
+              <span class="skill-hours" id="hours-speaking">0.0h (0%)</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill fill-speaking" id="bar-speaking" style="width: 0%"></div>
+            </div>
+          </div>
+          <!-- Reading -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-label">📖 Reading / Grammar / Vocab</span>
+              <span class="skill-hours" id="hours-reading">0.0h (0%)</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill fill-reading" id="bar-reading" style="width: 0%"></div>
+            </div>
+          </div>
+          <!-- Writing -->
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-label">✍️ Writing / Journal</span>
+              <span class="skill-hours" id="hours-writing">0.0h (0%)</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill fill-writing" id="bar-writing" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calendar / Heatmap View -->
+      <div class="glass-card calendar-card">
+        <div class="section-header">
+          <h2 class="section-title">📅 September 2026 Activity</h2>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Target: 33.0 hrs</span>
+        </div>
+        <div class="calendar-grid" id="calendar-view">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Logs & Vocabulary Vault -->
+    <section class="bottom-grid">
+      <!-- Recent Study Feed -->
+      <div class="glass-card content-card">
+        <div class="section-header">
+          <h2 class="section-title">📝 Recent Study Logs</h2>
+          <button id="open-calculator-btn" class="badge" style="background: var(--accent-primary); color: #fff; cursor: pointer; border: none;">
+            + Log Calculator
+          </button>
+        </div>
+        <div class="log-list" id="logs-feed">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Vocabulary Vault -->
+      <div class="glass-card content-card">
+        <div class="section-header">
+          <h2 class="section-title">📚 Vocabulary Vault</h2>
+          <span id="vocab-counter-tag" class="badge" style="background: rgba(6, 182, 212, 0.15); color: #06b6d4;">0 terms</span>
+        </div>
+        <div class="vocab-search-bar">
+          <input type="text" id="vocab-search" class="search-input" placeholder="Search vocabulary or meaning...">
+        </div>
+        <div class="vocab-list" id="vocab-cards">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Log / Calculator Modal -->
+    <div class="modal-overlay" id="calculator-modal">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3>⏱️ Daily Log Helper & Markdown Generator</h3>
+          <button id="close-modal-btn" class="btn-icon" style="border: none;">✕</button>
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="calc-date" class="form-input" value="2026-09-21">
+        </div>
+        <div class="form-group">
+          <label>🎧 Listening / Podcast (hours)</label>
+          <input type="number" step="0.25" min="0" id="calc-listening" class="form-input" placeholder="e.g. 1.0">
+        </div>
+        <div class="form-group">
+          <label>🗣️ Speaking / Conversation (hours)</label>
+          <input type="number" step="0.25" min="0" id="calc-speaking" class="form-input" placeholder="e.g. 0.5">
+        </div>
+        <div class="form-group">
+          <label>📖 Reading / Vocab (hours)</label>
+          <input type="number" step="0.25" min="0" id="calc-reading" class="form-input" placeholder="e.g. 1.5">
+        </div>
+        <div class="form-group">
+          <label>✍️ Writing / Journal (hours)</label>
+          <input type="number" step="0.25" min="0" id="calc-writing" class="form-input" placeholder="e.g. 0.5">
+        </div>
+        <div class="form-group">
+          <label>Notes & Takeaways</label>
+          <input type="text" id="calc-notes" class="form-input" placeholder="e.g. Learned 'call it a day'">
+        </div>
+        <button id="calc-generate-btn" class="btn-primary" style="margin-bottom: 12px;">Generate & Copy Markdown Snippet</button>
+        <div id="calc-output" style="display: none; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 6px; font-family: var(--font-mono); font-size: 0.75rem; white-space: pre-wrap;"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>English 5,000 Hours Mastery Project • 2026-09-21 to 2030-11-18</p>
+      <p style="margin-top: 4px;">Powered by GitHub Pages & Actions • Vault Sync with Obsidian</p>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

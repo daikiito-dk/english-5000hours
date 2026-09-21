@@ -1,0 +1,349 @@
+{
+  "project": {
+    "name": "English 5,000 Hours Mastery Project",
+    "start_date": "2026-09-21",
+    "target_date": "2030-11-18",
+    "target_hours": 5000.0,
+    "total_days": 1519,
+    "days_elapsed": 1,
+    "days_remaining": 1519,
+    "last_updated": "2026-09-21 15:17:22"
+  },
+  "stats": {
+    "total_hours": 0.0,
+    "remaining_hours": 5000.0,
+    "progress_percent": 0.0,
+    "current_phase_id": 1,
+    "daily_pace_required": 3.29,
+    "daily_target_baseline": 3.3,
+    "category_hours": {
+      "listening": 0.0,
+      "speaking": 0.0,
+      "reading": 0.0,
+      "writing": 0.0,
+      "other": 0.0
+    },
+    "vocabulary_count": 1,
+    "reading_notes_count": 1
+  },
+  "phases": [
+    {
+      "id": 1,
+      "name": "Phase 1: 基礎再構築 (Foundation Reconstruction)",
+      "short_name": "Phase 1: 基礎再構築",
+      "hours_range": [
+        0,
+        1000
+      ],
+      "duration": "〜 約10ヶ月",
+      "description": "単語・文法・発音の徹底習得。オンライン英会話の開始、リスニングの習慣化。",
+      "skills": [
+        "語彙・文法基礎",
+        "発音ルール・シャドーイング",
+        "日常Podcastリスニング",
+        "オンライン英会話開始"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Phase 2: 実践・習慣化 (Practice & Habituation)",
+      "short_name": "Phase 2: 実践・習慣化",
+      "hours_range": [
+        1000,
+        2500
+      ],
+      "duration": "〜 約1年3ヶ月",
+      "description": "英語ニュース、洋書読書、検定試験（TOEIC/英検1級）への挑戦。",
+      "skills": [
+        "ニュース・洋書多読",
+        "TOEIC 900+ / 英検1級",
+        "英語日記・要約ライティング",
+        "ディスカッション初級"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Phase 3: 英語脳の定着 (English Brain Solidification)",
+      "short_name": "Phase 3: 英語脳の定着",
+      "hours_range": [
+        2500,
+        4000
+      ],
+      "duration": "〜 約1年3ヶ月",
+      "description": "情報収集・趣味（ドラマ/ゲーム/SNS）の完全英語化。英語での業務・発信。",
+      "skills": [
+        "生活・趣味の完全英語化",
+        "業務・技術ドキュメント活用",
+        "英語でのSNS・記事発信",
+        "英語思考の定着"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Phase 4: 洗練・自動化 (Mastery & Fluency)",
+      "short_name": "Phase 4: 洗練・自動化",
+      "hours_range": [
+        4000,
+        5000
+      ],
+      "duration": "〜 約10ヶ月",
+      "description": "高度なディスカッション、ネイティブ特有のニュアンス理解、思考の完全英語化。",
+      "skills": [
+        "高度なディベート・交渉",
+        "文化・ユーモア・ニュアンス理解",
+        "完全な瞬発力と自動化",
+        "ネイティブ対等運用"
+      ]
+    }
+  ],
+  "monthly": {
+    "2026-09": {
+      "month": "2026-09",
+      "hours": 0.0,
+      "target": 33.0
+    }
+  },
+  "daily": {
+    "2026-09-21": {
+      "date": "2026-09-21",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening / Podcast",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking / Online Lesson",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Grammar / Vocab",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Writing / Journal",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": "Project kicked off!"
+    },
+    "2026-09-22": {
+      "date": "2026-09-22",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-23": {
+      "date": "2026-09-23",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-24": {
+      "date": "2026-09-24",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-25": {
+      "date": "2026-09-25",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-26": {
+      "date": "2026-09-26",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-27": {
+      "date": "2026-09-27",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-28": {
+      "date": "2026-09-28",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-29": {
+      "date": "2026-09-29",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    },
+    "2026-09-30": {
+      "date": "2026-09-30",
+      "hours": 0.0,
+      "breakdown": [
+        {
+          "name": "Listening",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Speaking",
+          "hours": 0.0,
+          "completed": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false
+        }
+      ],
+      "notes": ""
+    }
+  },
+  "vocabulary": [
+    {
+      "term": "call it a day",
+      "meaning": "（その日の）仕事を切り上げる、お開きにする",
+      "context": "予定していた作業や活動を「今日はここまで」と終了するときによく使う口語・ビジネス定番表現。",
+      "example": "*意味"
+    }
+  ],
+  "reading_notes": [
+    {
+      "title": "Example: The Power of Tiny Gains - 2026-09-21",
+      "source": "James Clear - Atomic Habits",
+      "summary": "Improving by just 1% every day results in a 37-fold improvement over the course of a year. Habits are the compound interest of self-improvement.",
+      "reflection": "5,000時間のプロジェクトも、1日3.3時間の積み重ね。焦らず毎日の習慣を固定化することが最重要。"
+    }
+  ]
+}
