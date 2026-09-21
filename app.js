@@ -513,5 +513,56 @@ function initCalculator() {
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initCalculator();
+  initScrollAnimations();
   loadData();
 });
+
+// Scroll Fade-In Animation
+function initScrollAnimations() {
+  // Apply fade-in class to all major sections
+  const sections = document.querySelectorAll(
+    "section, .glass-card, .roi-kpi-card, .matrix-card, .phase-card"
+  );
+
+  sections.forEach(el => {
+    el.classList.add("fade-in-section");
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+  );
+
+  sections.forEach(el => observer.observe(el));
+
+  // Active jump link highlighting on scroll
+  const jumpLinks = document.querySelectorAll(".jump-link");
+  const sectionTargets = Array.from(jumpLinks).map(link => {
+    const id = link.getAttribute("href").slice(1);
+    return { link, el: document.getElementById(id) };
+  }).filter(({ el }) => el != null);
+
+  const scrollSpy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          jumpLinks.forEach(l => l.style.color = "");
+          const active = sectionTargets.find(({ el }) => el === entry.target);
+          if (active) {
+            active.link.style.color = "var(--accent-primary)";
+          }
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  sectionTargets.forEach(({ el }) => scrollSpy.observe(el));
+}
