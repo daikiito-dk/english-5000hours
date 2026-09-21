@@ -390,44 +390,43 @@ body {
   color: var(--accent-emerald);
 }
 
-/* Baseline vs Target Section */
+/* Baseline vs Target Section & Skill Matrix */
 .baseline-section {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
-.baseline-container {
+.baseline-summary-banner {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  gap: 20px;
+  gap: 24px;
   align-items: center;
-  padding: 24px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 850px) {
-  .baseline-container {
+  .baseline-summary-banner {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 }
 
-.baseline-card-box {
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+.summary-banner-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.baseline-header {
+.summary-box-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
 }
 
 .baseline-badge-tag {
   font-size: 0.75rem;
   font-weight: 700;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
 }
 
@@ -443,59 +442,218 @@ body {
   border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-.baseline-scores {
+.summary-score-chips {
   display: flex;
   gap: 16px;
-  margin-bottom: 14px;
 }
 
-.score-chip {
+.summary-chip {
+  flex: 1;
   background: rgba(255, 255, 255, 0.04);
-  padding: 8px 14px;
+  padding: 10px 16px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
 }
 
-.score-chip-label {
+.chip-label {
   font-size: 0.7rem;
   color: var(--text-muted);
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
 }
 
-.score-chip-val {
-  font-size: 1.25rem;
+.chip-val {
+  font-size: 1.4rem;
   font-weight: 800;
   font-family: var(--font-mono);
-  color: var(--text-primary);
 }
 
-.baseline-subskills {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-}
-
-.baseline-arrow-col {
+.banner-arrow-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   color: var(--accent-primary);
   font-weight: 700;
   font-size: 0.85rem;
 }
 
 @media (max-width: 850px) {
-  .baseline-arrow-col {
+  .banner-arrow-col {
     transform: rotate(90deg);
     padding: 10px 0;
   }
 }
 
+/* Detailed Skill Progression Matrix Grid */
+.skills-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .skills-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.matrix-card {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.matrix-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.matrix-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.matrix-skill-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.matrix-skill-icon {
+  font-size: 1.3rem;
+}
+
+.matrix-badge-pair {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.level-badge-start {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.level-badge-goal {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Step Gauge Bar (A1 -> C2) */
+.cefr-stepper-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cefr-stepper-track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.cefr-step {
+  text-align: center;
+  padding: 4px 0;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  border-radius: 5px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.02);
+  position: relative;
+  transition: var(--transition);
+}
+
+.cefr-step.is-current {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fbbf24;
+  border: 1px solid #fbbf24;
+  font-weight: 700;
+}
+
+.cefr-step.is-target {
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid #10b981;
+  font-weight: 700;
+}
+
+.cefr-step.in-progress {
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+}
+
+/* Card Detail Comparison (Baseline vs Goal) */
+.matrix-detail-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .matrix-detail-block {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.detail-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.detail-label-start { color: #fbbf24; }
+.detail-label-goal { color: #34d399; }
+
+.detail-text {
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
 /* Section Common Header */
+
 
 .section-header {
   display: flex;

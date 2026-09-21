@@ -117,67 +117,275 @@
       </div>
     </section>
 
-    <!-- Starting Baseline vs Target Level Section -->
+    <!-- Starting Baseline vs Target Level Section (Skill Matrix) -->
     <section class="baseline-section">
-      <div class="glass-card baseline-container">
+      <div class="section-header">
+        <h2 class="section-title">🏁 Starting Baseline & Target Matrix (スキル別 現在地と到達指標)</h2>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">CEST 2025-05-26 判定 ➔ 2030-11-18 ゴール</span>
+      </div>
+
+      <!-- Top Summary Banner -->
+      <div class="glass-card baseline-summary-banner">
         <!-- Start Baseline Box -->
-        <div class="baseline-card-box">
-          <div class="baseline-header">
+        <div class="summary-banner-box">
+          <div class="summary-box-header">
             <span class="baseline-badge-tag tag-start">🏁 起点 (2026-09-21)</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted);">CEST 2025-05-26 判定</span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">CEST スピーキング判定</span>
           </div>
-          <div class="baseline-scores">
-            <div class="score-chip">
-              <div class="score-chip-label">TOEIC</div>
-              <div class="score-chip-val" id="baseline-toeic">420</div>
+          <div class="summary-score-chips">
+            <div class="summary-chip">
+              <div class="chip-label">TOEIC Score</div>
+              <div class="chip-val" id="baseline-toeic">420</div>
             </div>
-            <div class="score-chip">
-              <div class="score-chip-label">CEFR Overall</div>
-              <div class="score-chip-val" style="color: #fbbf24;" id="baseline-cefr">B1 low</div>
+            <div class="summary-chip">
+              <div class="chip-label">CEFR Speaking</div>
+              <div class="chip-val" style="color: #fbbf24;" id="baseline-cefr">B1 low</div>
             </div>
-          </div>
-          <div class="baseline-subskills">
-            <div><strong>語彙力</strong>: B1 high (理解 2,500 / 表現 1,200)</div>
-            <div><strong>文法の正確さ</strong>: B1 mid (完了形・受動態・間接話法強化)</div>
-            <div><strong>発音・音韻</strong>: A2 high (リズム・強弱・イントネーション改善)</div>
-            <div><strong>流暢さ</strong>: A2 low (言葉の詰まり・間・言い直しの低減)</div>
-            <div><strong>論理構成</strong>: A2 low (単純接続詞から複文・談話標識へ)</div>
           </div>
         </div>
 
         <!-- Center Transition Arrow -->
-        <div class="baseline-arrow-col">
+        <div class="banner-arrow-col">
           <span style="font-size: 1.5rem;">➔</span>
           <span>5,000 Hours</span>
-          <span style="font-size: 0.75rem; color: var(--text-muted);">Transform</span>
+          <span style="font-size: 0.72rem; color: var(--text-muted);">Transform</span>
         </div>
 
         <!-- Target Mastery Box -->
-        <div class="baseline-card-box">
-          <div class="baseline-header">
+        <div class="summary-banner-box">
+          <div class="summary-box-header">
             <span class="baseline-badge-tag tag-goal">🎯 最終到達目標 (2030-11-18)</span>
-            <span style="font-size: 0.75rem; color: var(--text-muted);">5,000h 完遂時</span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">5,000h 完遂・ネイティブ対等</span>
           </div>
-          <div class="baseline-scores">
-            <div class="score-chip">
-              <div class="score-chip-label">TOEIC</div>
-              <div class="score-chip-val" style="color: #34d399;">900+</div>
+          <div class="summary-score-chips">
+            <div class="summary-chip">
+              <div class="chip-label">TOEIC Target</div>
+              <div class="chip-val" style="color: #34d399;">900+</div>
             </div>
-            <div class="score-chip">
-              <div class="score-chip-label">CEFR Target</div>
-              <div class="score-chip-val" style="color: #34d399;">C1 〜 C2</div>
+            <div class="summary-chip">
+              <div class="chip-label">CEFR Target</div>
+              <div class="chip-val" style="color: #34d399;">C1 〜 C2</div>
             </div>
-          </div>
-          <div class="baseline-subskills">
-            <div><strong>語彙力</strong>: C1〜C2 (8,000〜12,000語・高精度コロケーション)</div>
-            <div><strong>文法運用</strong>: C1 (複雑構文・ニュアンスの自然な使い分け)</div>
-            <div><strong>発音・音韻</strong>: C1 (滑らかなリンキング・自然なアクセント)</div>
-            <div><strong>流暢さ</strong>: C1〜C2 (思考の完全英語化・無意識の高速応答)</div>
-            <div><strong>論理構成</strong>: C1 (ビジネス交渉・学術的ディベートの対等運用)</div>
           </div>
         </div>
       </div>
+
+      <!-- 6 Skill Progression Cards Grid -->
+      <div class="skills-matrix-grid">
+
+        <!-- 1. Vocabulary -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">📚</span>
+              <span>語彙力 (Vocabulary)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">B1 high</span>
+              <span>➔</span>
+              <span class="level-badge-goal">C1〜C2</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">A1</div>
+              <div class="cefr-step">A2</div>
+              <div class="cefr-step is-current" title="起点: B1 high">B1 ★</div>
+              <div class="cefr-step in-progress">B2</div>
+              <div class="cefr-step is-target" title="目標: C1〜C2">C1 ⚑</div>
+              <div class="cefr-step is-target">C2 ⚑</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">理解 2,500語 / 表現 1,200語。定型業務の語彙力はあるが、抽象的・未経験のテーマに課題。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">8,000〜12,000語レベル。ニュアンス豊かなコロケーションと専門用語を即座に想起・運用。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Grammar -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">✍️</span>
+              <span>文法の正確さ (Grammar)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">B1 mid</span>
+              <span>➔</span>
+              <span class="level-badge-goal">C1</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">A1</div>
+              <div class="cefr-step">A2</div>
+              <div class="cefr-step is-current" title="起点: B1 mid">B1 ★</div>
+              <div class="cefr-step in-progress">B2</div>
+              <div class="cefr-step is-target" title="目標: C1">C1 ⚑</div>
+              <div class="cefr-step">C2</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">語句を繋げられ理解を妨げる誤りは少ない。完了形・受動態・間接話法が次の強化テーマ。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">複雑な複文構造、仮定法・完了形・時制を意図通り自然に使い分ける高度な正確性。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Pronunciation -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">🗣️</span>
+              <span>発音・音韻 (Pronunciation)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">A2 high</span>
+              <span>➔</span>
+              <span class="level-badge-goal">C1</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">A1</div>
+              <div class="cefr-step is-current" title="起点: A2 high">A2 ★</div>
+              <div class="cefr-step in-progress">B1</div>
+              <div class="cefr-step in-progress">B2</div>
+              <div class="cefr-step is-target" title="目標: C1">C1 ⚑</div>
+              <div class="cefr-step">C2</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">単語は概ね明瞭だが聞き返されることあり。イントネーション・音の強弱・音声変化が課題。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">Linking / Flapping / Reductionを完全体得。相手に負担を与えない自然なリズムとアクセント。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Fluency -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">⚡</span>
+              <span>流暢さ・瞬発力 (Fluency)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">A2 low</span>
+              <span>➔</span>
+              <span class="level-badge-goal">C1〜C2</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">A1</div>
+              <div class="cefr-step is-current" title="起点: A2 low">A2 ★</div>
+              <div class="cefr-step in-progress">B1</div>
+              <div class="cefr-step in-progress">B2</div>
+              <div class="cefr-step is-target" title="目標: C1〜C2">C1 ⚑</div>
+              <div class="cefr-step is-target">C2 ⚑</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">迷い・言い直し・間があるが意思伝達は可能。話す練習量を増やし言葉の詰まりを低減。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">英語脳の確立。日本語の翻訳を介さず、無意識かつ高速なレスポンスで途切れず発話。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Coherence -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">🧩</span>
+              <span>論理構成・脈略 (Coherence)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">A2 low</span>
+              <span>➔</span>
+              <span class="level-badge-goal">C1</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">A1</div>
+              <div class="cefr-step is-current" title="起点: A2 low">A2 ★</div>
+              <div class="cefr-step in-progress">B1</div>
+              <div class="cefr-step in-progress">B2</div>
+              <div class="cefr-step is-target" title="目標: C1">C1 ⚑</div>
+              <div class="cefr-step">C2</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">and, but, because などの単純接続詞中心。発言内の考えの関係性を明確に繋ぐ練習。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">ディスコースマーカーを活用し、複文を駆使してビジネス交渉やディベートを論理的に牽引。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Exam / Milestone Indicator -->
+        <div class="glass-card matrix-card">
+          <div class="matrix-card-header">
+            <div class="matrix-skill-title">
+              <span class="matrix-skill-icon">🎯</span>
+              <span>検定指標 (TOEIC & CEFR Overall)</span>
+            </div>
+            <div class="matrix-badge-pair">
+              <span class="level-badge-start">420 pts</span>
+              <span>➔</span>
+              <span class="level-badge-goal">900+ pts</span>
+            </div>
+          </div>
+          <div class="cefr-stepper-wrap">
+            <div class="cefr-stepper-track">
+              <div class="cefr-step">200</div>
+              <div class="cefr-step">300</div>
+              <div class="cefr-step is-current" title="現在: 420点">420 ★</div>
+              <div class="cefr-step in-progress">700</div>
+              <div class="cefr-step in-progress">800</div>
+              <div class="cefr-step is-target" title="目標: 900点以上">900+ ⚑</div>
+            </div>
+          </div>
+          <div class="matrix-detail-block">
+            <div class="detail-col">
+              <span class="detail-label detail-label-start">📍 現在地 (Baseline)</span>
+              <p class="detail-text">TOEIC 420点 / CEFR B1 low。反復練習を無理なく継続できる習慣設計が最重要。</p>
+            </div>
+            <div class="detail-col">
+              <span class="detail-label detail-label-goal">🎯 到達目標 (Target)</span>
+              <p class="detail-text">TOEIC 900点超 / CEFR C1〜C2。グローバルビジネスで対等に通用する英語力の実証。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
+
 
     <!-- 4-Phase Roadmap -->
 
