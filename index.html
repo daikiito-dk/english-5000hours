@@ -439,16 +439,29 @@ gantt
       </div>
     </section>
 
-    <!-- Daily Commit Streak (GitHub Contributions) -->
+    <!-- Daily Commit Streak (this repo's commit history only) -->
     <section class="streak-section" id="section-streak">
       <div class="section-header">
         <h2 class="section-title">🌱 Daily Commit Streak</h2>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">Study logs are committed daily — the streak is the habit</span>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Commits to this repo only — study logs are committed daily</span>
       </div>
-      <div class="glass-card" style="padding: 16px; overflow-x: auto;">
-        <a href="https://github.com/daikiito-dk" target="_blank" rel="noopener">
-          <img src="https://ghchart.rshah.org/6366f1/daikiito-dk" alt="daikiito-dk's GitHub contribution graph" style="width: 100%; min-width: 640px; display: block;">
-        </a>
+      <div class="glass-card commit-streak-card">
+        <div class="commit-streak-scroll">
+          <div class="commit-streak-months" id="commit-streak-months"></div>
+          <div class="commit-streak-grid" id="commit-streak-grid"></div>
+        </div>
+        <div class="commit-streak-footer">
+          <span class="commit-streak-legend">
+            Less
+            <span class="commit-cell level-0"></span>
+            <span class="commit-cell level-1"></span>
+            <span class="commit-cell level-2"></span>
+            <span class="commit-cell level-3"></span>
+            <span class="commit-cell level-4"></span>
+            More
+          </span>
+          <a href="https://github.com/daikiito-dk/english-5000hours/commits/main" target="_blank" rel="noopener" class="commit-streak-link">View commits on GitHub →</a>
+        </div>
       </div>
     </section>
 

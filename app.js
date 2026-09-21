@@ -515,7 +515,142 @@ document.addEventListener("DOMContentLoaded", () => {
   initCalculator();
   initScrollAnimations();
   loadData();
+  renderCommitStreak();
 });
+
+// Daily Commit Streak — GitHub commit history for THIS repo only
+// (scoped via the repo commits API, not a user-wide contributions image)
+async function renderCommitStreak() {
+  const gridEl = document.getElementById("commit-streak-grid");
+  const monthsEl = document.getElementById("commit-streak-months");
+  if (!gridEl) return;
+
+  const OWNER = "daikiito-dk";
+  const REPO = "english-5000hours";
+  const WEEKS = 53;
+  const CACHE_KEY = `commitStreak:${OWNER}/${REPO}`;
+  const CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours
+
+  const dayCounts = await fetchRepoCommitCounts(OWNER, REPO, WEEKS, CACHE_KEY, CACHE_TTL_MS);
+  if (!dayCounts) {
+    gridEl.innerHTML = "";
+    monthsEl.innerHTML = "";
+    const msg = document.createElement("p");
+    msg.style.cssText = "font-size: 0.85rem; color: var(--text-muted); margin: 0;";
+    msg.innerHTML = `Couldn't load commit history from the GitHub API (rate limit or offline). <a href="https://github.com/${OWNER}/${REPO}/commits/main" target="_blank" rel="noopener" style="color: var(--accent-primary);">View commits on GitHub →</a>`;
+    gridEl.parentElement.insertBefore(msg, gridEl);
+    return;
+  }
+
+  renderCommitHeatmap(gridEl, monthsEl, dayCounts, WEEKS);
+}
+
+async function fetchRepoCommitCounts(owner, repo, weeks, cacheKey, cacheTtlMs) {
+  try {
+    const cached = JSON.parse(localStorage.getItem(cacheKey) || "null");
+    if (cached && Date.now() - cached.fetchedAt < cacheTtlMs) {
+      return cached.counts;
+    }
+  } catch (e) {
+    // localStorage unavailable (private mode) — ignore and fetch fresh
+  }
+
+  const since = new Date();
+  since.setDate(since.getDate() - weeks * 7);
+
+  const counts = {};
+  try {
+    let page = 1;
+    while (page <= 5) {
+      const res = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/commits?since=${since.toISOString()}&per_page=100&page=${page}`,
+        { headers: { Accept: "application/vnd.github+json" } }
+      );
+      if (!res.ok) throw new Error(`GitHub API responded ${res.status}`);
+      const batch = await res.json();
+      batch.forEach((c) => {
+        const iso = c.commit && c.commit.author && c.commit.author.date;
+        if (!iso) return;
+        const dateStr = toLocalDateStr(new Date(iso));
+        counts[dateStr] = (counts[dateStr] || 0) + 1;
+      });
+      if (batch.length < 100) break;
+      page++;
+    }
+  } catch (err) {
+    console.warn("Could not fetch commit history:", err);
+    return null;
+  }
+
+  try {
+    localStorage.setItem(cacheKey, JSON.stringify({ counts, fetchedAt: Date.now() }));
+  } catch (e) {
+    // storage full/unavailable — non-fatal
+  }
+  return counts;
+}
+
+// Local calendar-day key (not UTC) so grid cells and commit timestamps
+// line up regardless of the viewer's timezone offset.
+function toLocalDateStr(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function commitLevel(count) {
+  if (!count) return 0;
+  if (count === 1) return 1;
+  if (count === 2) return 2;
+  if (count <= 4) return 3;
+  return 4;
+}
+
+function renderCommitHeatmap(gridEl, monthsEl, counts, weeks) {
+  gridEl.innerHTML = "";
+  monthsEl.innerHTML = "";
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  // Start of the grid: the Sunday that begins the earliest visible week.
+  const start = new Date(today);
+  start.setDate(start.getDate() - today.getDay() - (weeks - 1) * 7);
+
+  const monthLabels = new Array(weeks).fill("");
+  let lastMonth = -1;
+
+  for (let week = 0; week < weeks; week++) {
+    for (let day = 0; day < 7; day++) {
+      const date = new Date(start);
+      date.setDate(date.getDate() + week * 7 + day);
+
+      const cell = document.createElement("div");
+
+      if (date > today) {
+        cell.className = "commit-cell is-empty";
+      } else {
+        const dateStr = toLocalDateStr(date);
+        const count = counts[dateStr] || 0;
+        cell.className = `commit-cell level-${commitLevel(count)}`;
+        cell.title = `${dateStr}: ${count} commit${count === 1 ? "" : "s"}`;
+      }
+      gridEl.appendChild(cell);
+
+      if (day === 0 && date.getMonth() !== lastMonth && date <= today) {
+        lastMonth = date.getMonth();
+        monthLabels[week] = date.toLocaleDateString("en-US", { month: "short" });
+      }
+    }
+  }
+
+  monthLabels.forEach((label) => {
+    const el = document.createElement("div");
+    el.textContent = label;
+    monthsEl.appendChild(el);
+  });
+}
 
 // Scroll Fade-In Animation
 function initScrollAnimations() {
