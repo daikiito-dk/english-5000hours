@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 1,
     "days_remaining": 1519,
-    "last_updated": "2026-09-21 16:28:48"
+    "last_updated": "2026-09-21 17:10:40"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,8 +39,8 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 1.4,
-    "remaining_hours": 4998.6,
+    "total_hours": 1.6,
+    "remaining_hours": 4998.4,
     "progress_percent": 0.03,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
@@ -50,7 +50,7 @@
       "speaking": 0.0,
       "speaking_real": 0.0,
       "reading": 0.0,
-      "writing": 0.0,
+      "writing": 0.2,
       "other": 0.0
     },
     "vocabulary_count": 1,
@@ -129,14 +129,14 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 1.4,
+      "hours": 1.6,
       "target": 33.0
     }
   },
   "daily": {
     "2026-09-21": {
       "date": "2026-09-21",
-      "hours": 1.4,
+      "hours": 1.6,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -158,12 +158,12 @@
         },
         {
           "name": "Writing / Journal",
-          "hours": 0.0,
-          "completed": false,
+          "hours": 0.2,
+          "completed": true,
           "is_real": false
         }
       ],
-      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.)"
+      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo)."
     },
     "2026-09-22": {
       "date": "2026-09-22",
@@ -428,8 +428,8 @@
     "currency": "JPY",
     "total_invested_yen": 1590,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 1.4,
-    "cost_per_hour_yen": 1135.71,
+    "total_hours_from_paid_tools": 1.6,
+    "cost_per_hour_yen": 993.75,
     "breakdown": [
       {
         "id": "netflix",
