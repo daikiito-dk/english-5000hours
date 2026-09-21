@@ -46,7 +46,22 @@
 
 ## 🗺️ 4-Phase Roadmap
 
-詳細は [docs/roadmap.md](docs/roadmap.md) を参照。
+詳細は [docs/roadmap.md](docs/roadmap.md) を参照。日付は各フェーズの目安期間（Phase1: 約10ヶ月 / Phase2・3: 約1年3ヶ月 / Phase4: 約10ヶ月）から算出した概算。
+
+```mermaid
+gantt
+    title English 5,000 Hours Roadmap (2026-09-21 〜 2030-11-18)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m
+    section Phase 1 (0-1,000h)
+    基礎再構築: 単語・文法・発音、オンライン英会話 :active, phase1, 2026-09-21, 2027-07-21
+    section Phase 2 (1,000-2,500h)
+    実践・習慣化: 英語ニュース・洋書多読、検定挑戦 :phase2, after phase1, 2028-10-21
+    section Phase 3 (2,500-4,000h)
+    英語脳の定着: 趣味・業務の完全英語化、発信開始 :phase3, after phase2, 2030-01-21
+    section Phase 4 (4,000-5,000h)
+    洗練・自動化: 高度なディベート、思考の完全英語化 :phase4, after phase3, 2030-11-18
+```
 
 - [ ] **Phase 1: 基礎再構築 (0 〜 1,000h / 〜約10ヶ月)** ◀ *CURRENT*
   - 単語・文法・発音の徹底習得。オンライン英会話の開始、リスニングの習慣化。
@@ -56,6 +71,14 @@
   - 情報収集・趣味（ドラマ/ゲーム/SNS）の完全英語化。英語での業務・発信。
 - [ ] **Phase 4: 洗練・自動化 (4,000 〜 5,000h / 〜約10ヶ月)**
   - 高度なディスカッション、ネイティブ特有のニュアンス理解、思考の完全英語化。
+
+---
+
+## 🌱 Daily Commit Streak (草)
+
+毎日の学習ログコミット（[Daily Workflow](#-daily-workflow) 参照）の積み上げがそのままここに反映される。
+
+![daikiito-dk's contribution graph](https://ghchart.rshah.org/6366f1/daikiito-dk)
 
 ---
 

@@ -12,6 +12,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+
+  <!-- Mermaid.js (roadmap gantt chart) -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script defer>
+    if (window.mermaid) {
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "dark",
+        themeVariables: { primaryColor: "#6366f1", primaryBorderColor: "#a855f7", lineColor: "#06b6d4" }
+      });
+      mermaid.run();
+    }
+  </script>
 </head>
 <body>
 
@@ -54,6 +67,7 @@
       <a href="#section-progress" class="jump-link">📊 Progress</a>
       <a href="#section-baseline" class="jump-link">🏁 Baseline</a>
       <a href="#section-roadmap" class="jump-link">🗺️ Roadmap</a>
+      <a href="#section-streak" class="jump-link">🌱 Streak</a>
       <a href="#section-skills" class="jump-link">📈 Skills</a>
       <a href="#section-roi" class="jump-link">💰 ROI</a>
       <a href="#section-logs" class="jump-link">📝 Logs</a>
@@ -404,8 +418,37 @@
         <h2 class="section-title">🗺️ 4-Phase Master Roadmap</h2>
         <span style="font-size: 0.85rem; color: var(--text-muted);">Total Goal: CEFR C1〜C2 Fluency</span>
       </div>
+      <div class="glass-card" style="overflow-x: auto; margin-bottom: 20px; padding: 16px;">
+        <pre class="mermaid">
+gantt
+    title English 5,000 Hours Roadmap (2026-09-21 to 2030-11-18)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m
+    section Phase 1 (0-1,000h)
+    Foundation Reconstruction :active, phase1, 2026-09-21, 2027-07-21
+    section Phase 2 (1,000-2,500h)
+    Practice and Habituation :phase2, after phase1, 2028-10-21
+    section Phase 3 (2,500-4,000h)
+    English Brain Solidification :phase3, after phase2, 2030-01-21
+    section Phase 4 (4,000-5,000h)
+    Mastery and Fluency :phase4, after phase3, 2030-11-18
+        </pre>
+      </div>
       <div class="phases-grid" id="phases-container">
         <!-- Dynamically rendered or pre-populated -->
+      </div>
+    </section>
+
+    <!-- Daily Commit Streak (GitHub Contributions) -->
+    <section class="streak-section" id="section-streak">
+      <div class="section-header">
+        <h2 class="section-title">🌱 Daily Commit Streak</h2>
+        <span style="font-size: 0.85rem; color: var(--text-muted);">Study logs are committed daily — the streak is the habit</span>
+      </div>
+      <div class="glass-card" style="padding: 16px; overflow-x: auto;">
+        <a href="https://github.com/daikiito-dk" target="_blank" rel="noopener">
+          <img src="https://ghchart.rshah.org/6366f1/daikiito-dk" alt="daikiito-dk's GitHub contribution graph" style="width: 100%; min-width: 640px; display: block;">
+        </a>
       </div>
     </section>
 

@@ -733,6 +733,11 @@ main.container {
   margin-bottom: 36px;
 }
 
+/* Daily Commit Streak Section */
+.streak-section {
+  margin-bottom: 36px;
+}
+
 .phases-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
