@@ -151,7 +151,16 @@ function renderDashboard(data) {
   const currentPhase = phases.find(p => p.id === stats.current_phase_id) || phases[0];
   document.getElementById("kpi-phase-title").textContent = `Phase ${currentPhase.id}`;
 
+  // Baseline updates
+  if (data.baseline) {
+    const toeicEl = document.getElementById("baseline-toeic");
+    const cefrEl = document.getElementById("baseline-cefr");
+    if (toeicEl) toeicEl.textContent = data.baseline.toeic;
+    if (cefrEl) cefrEl.textContent = data.baseline.cefr_overall;
+  }
+
   // 3. Phase Roadmap
+
   renderPhases(phases, stats.total_hours);
 
   // 4. Skills Breakdown

@@ -275,7 +275,22 @@ def build_data():
             "days_remaining": days_remaining,
             "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         },
+        "baseline": {
+            "start_date": "2026-09-21",
+            "toeic": 420,
+            "cefr_overall": "B1 low",
+            "assessment_source": "CEST Speaking Assessment (2025-05-26)",
+            "skills": {
+                "vocabulary": {"level": "B1 high", "score": "Active: 1,200 / Passive: 2,500"},
+                "grammar": {"level": "B1 mid", "note": "完了形・受動態・間接話法が次の課題"},
+                "pronunciation": {"level": "A2 high", "note": "イントネーション・音の強弱・音声変化の強化"},
+                "fluency": {"level": "A2 low", "note": "発話量拡大による詰まり・言い直しの低減"},
+                "coherence": {"level": "A2 low", "note": "複文・論理接続詞（ディスコースマーカー）の習得"}
+            },
+            "target_goal": "CEFR C1〜C2 / TOEIC 900+ (ビジネス・対等な議論と発信)"
+        },
         "stats": {
+
             "total_hours": total_hours,
             "remaining_hours": round(remaining_hours, 2),
             "progress_percent": progress_pct,

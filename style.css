@@ -390,7 +390,113 @@ body {
   color: var(--accent-emerald);
 }
 
+/* Baseline vs Target Section */
+.baseline-section {
+  margin-bottom: 36px;
+}
+
+.baseline-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 24px;
+}
+
+@media (max-width: 850px) {
+  .baseline-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.baseline-card-box {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+.baseline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.baseline-badge-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.tag-start {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.tag-goal {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.baseline-scores {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.score-chip {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+.score-chip-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.score-chip-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.baseline-subskills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.baseline-arrow-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--accent-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 850px) {
+  .baseline-arrow-col {
+    transform: rotate(90deg);
+    padding: 10px 0;
+  }
+}
+
 /* Section Common Header */
+
 .section-header {
   display: flex;
   justify-content: space-between;
