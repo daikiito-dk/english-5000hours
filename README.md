@@ -111,6 +111,7 @@ english-5000hours/
 ## 🔄 Daily Workflow
 
 1. **記録**: `logs/YYYY-MM.md` にその日の学習時間をカテゴリ別に記録。
+   - Speaking項目のうち、HR面談・エージェントとの電話など**実戦(低ストレス練習ではない)の会話**は `Speaking (real): 0.5 hr` のように `(real)` タグを付ける。`build.py` が `category_hours.speaking_real` として練習分と別集計する。
 2. **定着**: 新出単語は `notes/vocabulary.md`、読書/視聴メモは `notes/reading-notes.md`、ライティング練習は `notes/journal/` に追記。
 3. **同期 (Daily Commit & Push)**: 
    ```bash

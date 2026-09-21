@@ -60,6 +60,7 @@ def parse_logs():
     category_hours = {
         "listening": 0.0,
         "speaking": 0.0,
+        "speaking_real": 0.0,  # subset of "speaking": real-stakes calls (interviews, recruiter calls), tagged "(real)" in the log line
         "reading": 0.0,
         "writing": 0.0,
         "other": 0.0
@@ -104,18 +105,28 @@ def parse_logs():
                     checked = cat_match.group(1).lower() == "x"
                     name = cat_match.group(2).strip()
                     hours = float(cat_match.group(3))
+
+                    # "(real)" tag marks real-stakes speaking (HR/recruiter calls, live
+                    # interviews) as distinct from low-stakes practice — same "speaking"
+                    # bucket for hours, but tracked separately so the two don't blend.
+                    is_real = "(real)" in name.lower()
+                    name_clean = re.sub(r"\(real\)", "", name, flags=re.IGNORECASE).strip()
+
                     breakdown.append({
-                        "name": name,
+                        "name": name_clean,
                         "hours": hours,
-                        "completed": checked
+                        "completed": checked,
+                        "is_real": is_real
                     })
 
                     # Categorize
-                    name_lower = name.lower()
+                    name_lower = name_clean.lower()
                     if "listen" in name_lower or "podcast" in name_lower or "audio" in name_lower:
                         category_hours["listening"] += hours
                     elif "speak" in name_lower or "lesson" in name_lower or "conversation" in name_lower:
                         category_hours["speaking"] += hours
+                        if is_real:
+                            category_hours["speaking_real"] += hours
                     elif "read" in name_lower or "vocab" in name_lower or "grammar" in name_lower or "book" in name_lower:
                         category_hours["reading"] += hours
                     elif "write" in name_lower or "journal" in name_lower or "essay" in name_lower:

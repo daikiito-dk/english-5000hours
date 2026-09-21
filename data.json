@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 1,
     "days_remaining": 1519,
-    "last_updated": "2026-09-21 16:21:27"
+    "last_updated": "2026-09-21 16:28:48"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -48,6 +48,7 @@
     "category_hours": {
       "listening": 1.4,
       "speaking": 0.0,
+      "speaking_real": 0.0,
       "reading": 0.0,
       "writing": 0.0,
       "other": 0.0
@@ -140,22 +141,26 @@
         {
           "name": "Listening / Drama",
           "hours": 1.4,
-          "completed": true
+          "completed": true,
+          "is_real": false
         },
         {
           "name": "Speaking / Online Lesson",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Grammar / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Writing / Journal",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.)"
@@ -167,17 +172,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -189,17 +197,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -211,17 +222,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -233,17 +247,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -255,17 +272,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -277,17 +297,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -299,17 +322,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -321,17 +347,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
@@ -343,17 +372,20 @@
         {
           "name": "Listening",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Speaking",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         },
         {
           "name": "Reading / Vocab",
           "hours": 0.0,
-          "completed": false
+          "completed": false,
+          "is_real": false
         }
       ],
       "notes": ""
