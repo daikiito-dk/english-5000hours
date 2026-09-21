@@ -175,6 +175,84 @@ function renderDashboard(data) {
 
   // 7. Vocabulary
   renderVocabulary(vocabulary);
+
+  // 8. ROI
+  if (data.roi) renderROI(data.roi);
+}
+
+// Render Learning Investment & ROI Section
+function renderROI(roi) {
+  // KPI cards
+  const fmt = (n) => n != null ? `¥${Number(n).toLocaleString()}` : "—";
+
+  const totalEl = document.getElementById("roi-total-invested");
+  const monthlyEl = document.getElementById("roi-monthly-spend");
+  const cphEl = document.getElementById("roi-cost-per-hour");
+
+  if (totalEl) totalEl.textContent = fmt(roi.total_invested_yen);
+  if (monthlyEl) monthlyEl.textContent = fmt(roi.monthly_spend_yen);
+  if (cphEl) {
+    if (roi.cost_per_hour_yen != null) {
+      cphEl.textContent = fmt(roi.cost_per_hour_yen) + " / hr";
+      // Color code efficiency
+      const cph = roi.cost_per_hour_yen;
+      cphEl.style.color = cph < 500 ? "#34d399" : cph < 2000 ? "#fbbf24" : "#f87171";
+    } else {
+      cphEl.textContent = "—";
+      cphEl.style.color = "var(--text-muted)";
+    }
+  }
+
+  // Breakdown table
+  const tbody = document.getElementById("roi-table-body");
+  const footer = document.getElementById("roi-table-footer");
+  if (!tbody) return;
+
+  tbody.innerHTML = "";
+  const breakdown = roi.breakdown || [];
+
+  if (breakdown.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; color:var(--text-muted); padding: 16px;">No services tracked yet.</td></tr>`;
+    return;
+  }
+
+  breakdown.forEach(item => {
+    const cphVal = item.cost_per_hour_yen;
+    const cphColor = cphVal == null ? "var(--text-muted)"
+                   : cphVal < 500   ? "#34d399"
+                   : cphVal < 2000  ? "#fbbf24"
+                   : "#f87171";
+    const cphText = cphVal != null ? `¥${Number(cphVal).toLocaleString()}` : "— (no hours yet)";
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td><strong>${item.service}</strong><br><small style="color:var(--text-muted)">${item.provider || ""}</small></td>
+      <td>${item.plan || "—"}</td>
+      <td><span class="roi-category-tag">${item.category || "—"}</span></td>
+      <td>¥${Number(item.monthly_yen).toLocaleString()}</td>
+      <td>${item.months_active}</td>
+      <td>¥${Number(item.total_yen).toLocaleString()}</td>
+      <td>${item.hours_logged > 0 ? item.hours_logged.toFixed(1) + " hrs" : "—"}</td>
+      <td style="color: ${cphColor}; font-weight: 600;">${cphText}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Footer total row
+  if (footer) {
+    const totalInvested = roi.total_invested_yen || 0;
+    const totalHours = roi.total_hours_from_paid_tools || 0;
+    const overallCph = roi.cost_per_hour_yen;
+    const overallColor = overallCph == null ? "var(--text-muted)"
+                       : overallCph < 500   ? "#34d399"
+                       : overallCph < 2000  ? "#fbbf24"
+                       : "#f87171";
+    footer.innerHTML = `
+      <span>Total: <strong>¥${Number(totalInvested).toLocaleString()}</strong> invested</span>
+      <span style="margin-left: 16px;">${totalHours.toFixed(1)} hrs from paid tools</span>
+      <span style="margin-left: 16px; color: ${overallColor};">Overall ¥/hr: <strong>${overallCph != null ? "¥" + Number(overallCph).toLocaleString() : "—"}</strong></span>
+    `;
+  }
 }
 
 // Render 4-Phase Roadmap

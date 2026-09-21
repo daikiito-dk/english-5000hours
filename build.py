@@ -234,6 +234,102 @@ def parse_reading_notes():
     return {"count": len(items), "items": items}
 
 
+def compute_roi(log_data, today):
+    """
+    Reads costs from the existing data.json (or defaults),
+    computes cumulative investment and cost-per-hour per service.
+    """
+    costs_config = {"currency": "JPY", "subscriptions": [], "one_time": []}
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            existing = json.load(f)
+        costs_config = existing.get("costs", costs_config)
+    except Exception:
+        pass
+
+    breakdown = []
+    total_invested = 0
+    monthly_spend = 0
+
+    for sub in costs_config.get("subscriptions", []):
+        start_str = sub.get("start_month", today.strftime("%Y-%m"))
+        end_str = sub.get("end_month")  # None = still active
+
+        start_ym = datetime.strptime(start_str, "%Y-%m").date().replace(day=1)
+        end_ym = datetime.strptime(end_str, "%Y-%m").date().replace(day=1) if end_str else today.replace(day=1)
+
+        # Count months (inclusive)
+        months_active = max(1, (end_ym.year - start_ym.year) * 12 + (end_ym.month - start_ym.month) + 1)
+        cost_total = sub["monthly_yen"] * months_active
+        total_invested += cost_total
+
+        if not end_str:
+            monthly_spend += sub["monthly_yen"]
+
+        # Hours logged for this service's category (rough attribution by category keyword)
+        category_kw = sub.get("category", "").lower()
+        hours_for_service = 0.0
+        cat_hours = log_data["category_hours"]
+        if "listen" in category_kw or "drama" in category_kw or "podcast" in category_kw:
+            hours_for_service = cat_hours.get("listening", 0.0)
+        elif "speak" in category_kw or "conversation" in category_kw:
+            hours_for_service = cat_hours.get("speaking", 0.0)
+        elif "read" in category_kw or "vocab" in category_kw:
+            hours_for_service = cat_hours.get("reading", 0.0)
+        elif "writ" in category_kw or "journal" in category_kw:
+            hours_for_service = cat_hours.get("writing", 0.0)
+        else:
+            hours_for_service = log_data["total_hours"]
+
+        cph = round(cost_total / hours_for_service, 2) if hours_for_service > 0 else None
+
+        breakdown.append({
+            "id": sub.get("id", sub["service"].lower()),
+            "service": sub["service"],
+            "provider": sub.get("provider", ""),
+            "plan": sub.get("plan", ""),
+            "category": sub.get("category", ""),
+            "monthly_yen": sub["monthly_yen"],
+            "months_active": months_active,
+            "total_yen": cost_total,
+            "hours_logged": round(hours_for_service, 2),
+            "cost_per_hour_yen": cph,
+            "note": sub.get("note", "")
+        })
+
+    # One-time purchases
+    for item in costs_config.get("one_time", []):
+        total_invested += item.get("yen", 0)
+        hours_for_item = item.get("hours_logged", 0.0)
+        cph = round(item["yen"] / hours_for_item, 2) if hours_for_item > 0 else None
+        breakdown.append({
+            "id": item.get("id", ""),
+            "service": item.get("name", ""),
+            "provider": item.get("provider", ""),
+            "plan": "One-time",
+            "category": item.get("category", ""),
+            "monthly_yen": 0,
+            "months_active": 1,
+            "total_yen": item.get("yen", 0),
+            "hours_logged": round(hours_for_item, 2),
+            "cost_per_hour_yen": cph,
+            "note": item.get("note", "")
+        })
+
+    total_hours_all = log_data["total_hours"]
+    overall_cph = round(total_invested / total_hours_all, 2) if total_hours_all > 0 else None
+
+    return {
+        "_costs_config": costs_config,
+        "currency": costs_config.get("currency", "JPY"),
+        "total_invested_yen": total_invested,
+        "monthly_spend_yen": monthly_spend,
+        "total_hours_from_paid_tools": round(total_hours_all, 2),
+        "cost_per_hour_yen": overall_cph,
+        "breakdown": breakdown
+    }
+
+
 def build_data():
     today = date(2026, 9, 21) # Baseline project start
     try:
@@ -250,6 +346,7 @@ def build_data():
     log_data = parse_logs()
     vocab_data = parse_vocabulary()
     reading_data = parse_reading_notes()
+    roi_data = compute_roi(log_data, today)
 
     total_hours = log_data["total_hours"]
     progress_pct = round((total_hours / TARGET_HOURS) * 100, 2)
@@ -307,7 +404,9 @@ def build_data():
         "monthly": log_data["monthly_records"],
         "daily": log_data["daily_records"],
         "vocabulary": vocab_data["items"],
-        "reading_notes": reading_data["items"]
+        "reading_notes": reading_data["items"],
+        "costs": roi_data.pop("_costs_config", {"currency": "JPY", "subscriptions": [], "one_time": []}),
+        "roi": roi_data
     }
 
     with open("data.json", "w", encoding="utf-8") as f:
