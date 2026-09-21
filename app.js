@@ -30,39 +30,39 @@ const DEFAULT_DATA = {
   phases: [
     {
       id: 1,
-      name: "Phase 1: 基礎再構築 (Foundation)",
-      short_name: "Phase 1: 基礎再構築",
+      name: "Phase 1: Foundation Reconstruction",
+      short_name: "Phase 1: Foundation",
       hours_range: [0, 1000],
-      duration: "〜 約10ヶ月",
-      description: "単語・文法・発音の徹底習得。オンライン英会話の開始、リスニングの習慣化。",
-      skills: ["語彙・文法基礎", "発音・シャドーイング", "日常Podcastリスニング", "オンライン英会話開始"]
+      duration: "~10 months",
+      description: "Thorough acquisition of core vocabulary, grammar, and pronunciation. Daily podcast listening and online conversation.",
+      skills: ["Core Vocab & Grammar", "Pronunciation & Shadowing", "Daily Podcast Listening", "Online Conversation Launch"]
     },
     {
       id: 2,
-      name: "Phase 2: 実践・習慣化 (Practice)",
-      short_name: "Phase 2: 実践・習慣化",
+      name: "Phase 2: Practice & Habituation",
+      short_name: "Phase 2: Practice",
       hours_range: [1000, 2500],
-      duration: "〜 約1年3ヶ月",
-      description: "英語ニュース、洋書読書、検定試験（TOEIC/英検1級）への挑戦。",
-      skills: ["ニュース・洋書多読", "TOEIC 900+ / 英検1級", "英語日記・要約", "ディスカッション初級"]
+      duration: "~15 months",
+      description: "Extensive reading of news and books; targeting TOEIC 900+ and Eiken Grade 1.",
+      skills: ["Extensive Reading (News/Books)", "TOEIC 900+ / Eiken 1", "Journal & Summary Writing", "Intermediate Discussion"]
     },
     {
       id: 3,
-      name: "Phase 3: 英語脳の定着 (Solidification)",
-      short_name: "Phase 3: 英語脳の定着",
+      name: "Phase 3: English Brain Solidification",
+      short_name: "Phase 3: Solidification",
       hours_range: [2500, 4000],
-      duration: "〜 約1年3ヶ月",
-      description: "情報収集・趣味（ドラマ/ゲーム/SNS）の完全英語化。英語での業務・発信。",
-      skills: ["生活・趣味の完全英語化", "業務・技術活用", "英語SNS・記事発信", "英語思考の定着"]
+      duration: "~15 months",
+      description: "Total immersion: personal research, hobbies, and work conducted entirely in English.",
+      skills: ["100% English Immersion", "Work & Technical Docs", "English Writing & Social Output", "Thinking in English"]
     },
     {
       id: 4,
-      name: "Phase 4: 洗練・自動化 (Fluency)",
-      short_name: "Phase 4: 洗練・自動化",
+      name: "Phase 4: Mastery & Fluency",
+      short_name: "Phase 4: Mastery",
       hours_range: [4000, 5000],
-      duration: "〜 約10ヶ月",
-      description: "高度なディスカッション、ネイティブ特有のニュアンス理解、思考の完全英語化。",
-      skills: ["高度なディベート・交渉", "文化・ユーモア理解", "瞬発力と自動化", "ネイティブ対等運用"]
+      duration: "~10 months",
+      description: "High-level debate, native-level nuance comprehension, and effortless spontaneity.",
+      skills: ["Advanced Debate & Negotiation", "Cultural Nuance & Wit", "Effortless Spontaneity", "Native-Level Fluency"]
     }
   ],
   daily: {
@@ -76,20 +76,21 @@ const DEFAULT_DATA = {
   vocabulary: [
     {
       term: "call it a day",
-      meaning: "（その日の）仕事を切り上げる、お開きにする",
-      context: "予定していた作業や活動を「今日はここまで」と終了するときによく使う口語・ビジネス定番表現。",
-      example: "Let's call it a day and pick this up tomorrow morning. (今日はここまでに切り上げて、明日の朝再開しましょう。)"
+      meaning: "To stop what you are doing, especially work, often because you have done enough for the day.",
+      context: "Commonly used in professional and casual settings to wrap up meetings or workday tasks.",
+      example: "Let's call it a day and pick this up tomorrow morning."
     }
   ],
   reading_notes: [
     {
-      title: "Example: The Power of Tiny Gains - 2026-09-21",
+      title: "The Power of Tiny Gains",
       source: "James Clear - Atomic Habits",
       summary: "Improving by just 1% every day results in a 37-fold improvement over the course of a year. Habits are the compound interest of self-improvement.",
-      reflection: "5,000時間のプロジェクトも、1日3.3時間の積み重ね。焦らず毎日の習慣を固定化することが最重要。"
+      reflection: "A 5,000-hour journey is achieved 3.3 hours at a time. Daily compounding habit is the ultimate key."
     }
   ]
 };
+
 
 let currentData = DEFAULT_DATA;
 
