@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 1,
     "days_remaining": 1519,
-    "last_updated": "2026-09-21 19:35:44"
+    "last_updated": "2026-09-21 19:51:51"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 2.8,
-    "remaining_hours": 4997.2,
+    "total_hours": 3.0,
+    "remaining_hours": 4997.0,
     "progress_percent": 0.06,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
       "listening": 2.1,
-      "speaking": 0.0,
+      "speaking": 0.2,
       "speaking_real": 0.0,
       "reading": 0.5,
       "writing": 0.2,
@@ -129,14 +129,14 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 2.8,
+      "hours": 3.0,
       "target": 33.0
     }
   },
   "daily": {
     "2026-09-21": {
       "date": "2026-09-21",
-      "hours": 2.8,
+      "hours": 3.0,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -145,9 +145,9 @@
           "is_real": false
         },
         {
-          "name": "Speaking / Online Lesson",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Speaking / AI Voice Practice",
+          "hours": 0.2,
+          "completed": true,
           "is_real": false
         },
         {
@@ -163,7 +163,7 @@
           "is_real": false
         }
       ],
-      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.); Vocab session: business/legal idioms from Suits dialogue (in jeopardy, bad faith, due and payable, closer, etc.) — see `notes/vocabulary.md`."
+      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.); Vocab session: business/legal idioms from Suits dialogue (in jeopardy, bad faith, due and payable, closer, etc.) — see `notes/vocabulary.md`.; First Speaking rep of the project: 10-min voice conversation with ChatGPT, using today's vocab in live spoken questions instead of just reading them."
     },
     "2026-09-22": {
       "date": "2026-09-22",
@@ -506,8 +506,8 @@
     "currency": "JPY",
     "total_invested_yen": 1590,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 2.8,
-    "cost_per_hour_yen": 567.86,
+    "total_hours_from_paid_tools": 3.0,
+    "cost_per_hour_yen": 530.0,
     "breakdown": [
       {
         "id": "netflix",
