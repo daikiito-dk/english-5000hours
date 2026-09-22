@@ -215,10 +215,16 @@ function renderROI(roi) {
   // KPI cards
   const fmt = (n) => n != null ? `¥${Number(n).toLocaleString()}` : "—";
 
+  const tcoEl = document.getElementById("roi-tco");
+  const tcoSubEl = document.getElementById("roi-tco-sub");
   const totalEl = document.getElementById("roi-total-invested");
   const monthlyEl = document.getElementById("roi-monthly-spend");
   const cphEl = document.getElementById("roi-cost-per-hour");
 
+  if (tcoEl) tcoEl.textContent = fmt(roi.tco_yen);
+  if (tcoSubEl && roi.hourly_wage_yen != null) {
+    tcoSubEl.textContent = `${fmt(roi.total_invested_yen)} spent + ${roi.total_hours_from_paid_tools.toFixed(1)}h × ¥${Number(roi.hourly_wage_yen).toLocaleString()}/hr (${fmt(roi.time_value_yen)} of your time)`;
+  }
   if (totalEl) totalEl.textContent = fmt(roi.total_invested_yen);
   if (monthlyEl) monthlyEl.textContent = fmt(roi.monthly_spend_yen);
   if (cphEl) {

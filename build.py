@@ -369,6 +369,14 @@ def compute_roi(log_data, today):
     total_hours_all = log_data["total_hours"]
     overall_cph = round(total_invested / total_hours_all, 2) if total_hours_all > 0 else None
 
+    # Total Cost of Ownership: money spent + the value of the time actually put in
+    # (study/practice hours valued at the person's own hourly wage), not just cash
+    # outlay. Commute/prep time isn't tracked separately from study hours today, so
+    # it's folded into total_hours_all rather than added on top.
+    hourly_wage_yen = costs_config.get("hourly_wage_yen", 0)
+    time_value_yen = round(total_hours_all * hourly_wage_yen, 2)
+    tco_yen = round(total_invested + time_value_yen, 2)
+
     return {
         "_costs_config": costs_config,
         "currency": costs_config.get("currency", "JPY"),
@@ -376,6 +384,9 @@ def compute_roi(log_data, today):
         "monthly_spend_yen": monthly_spend,
         "total_hours_from_paid_tools": round(total_hours_all, 2),
         "cost_per_hour_yen": overall_cph,
+        "hourly_wage_yen": hourly_wage_yen,
+        "time_value_yen": time_value_yen,
+        "tco_yen": tco_yen,
         "breakdown": breakdown
     }
 

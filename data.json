@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 14:46:55"
+    "last_updated": "2026-09-22 15:09:39"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -505,6 +505,7 @@
   ],
   "costs": {
     "currency": "JPY",
+    "hourly_wage_yen": 3900,
     "subscriptions": [
       {
         "id": "netflix",
@@ -592,6 +593,9 @@
     "monthly_spend_yen": 1590,
     "total_hours_from_paid_tools": 8.6,
     "cost_per_hour_yen": 230.93,
+    "hourly_wage_yen": 3900,
+    "time_value_yen": 33540.0,
+    "tco_yen": 35526.0,
     "breakdown": [
       {
         "id": "netflix",
