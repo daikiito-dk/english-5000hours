@@ -5,9 +5,9 @@
     "target_date": "2030-11-18",
     "target_hours": 5000.0,
     "total_days": 1519,
-    "days_elapsed": 1,
-    "days_remaining": 1519,
-    "last_updated": "2026-09-21 20:43:40"
+    "days_elapsed": 2,
+    "days_remaining": 1518,
+    "last_updated": "2026-09-22 10:42:42"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 3.4,
-    "remaining_hours": 4996.6,
-    "progress_percent": 0.07,
+    "total_hours": 5.1,
+    "remaining_hours": 4994.9,
+    "progress_percent": 0.1,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 2.1,
-      "speaking": 0.6,
+      "listening": 3.6,
+      "speaking": 0.8,
       "speaking_real": 0.0,
       "reading": 0.5,
       "writing": 0.2,
@@ -129,18 +129,18 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 3.4,
+      "hours": 5.1,
       "target": 33.0
     }
   },
   "daily": {
     "2026-09-21": {
       "date": "2026-09-21",
-      "hours": 3.4,
+      "hours": 4.9,
       "breakdown": [
         {
-          "name": "Listening / Drama",
-          "hours": 2.1,
+          "name": "Listening / Drama & Audiobook",
+          "hours": 3.6,
           "completed": true,
           "is_real": false
         },
@@ -163,11 +163,11 @@
           "is_real": false
         }
       ],
-      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.); Vocab session: business/legal idioms from Suits dialogue (in jeopardy, bad faith, due and payable, closer, etc.) — see `notes/vocabulary.md`.; First Speaking rep of the project: 10-min voice conversation with ChatGPT, using today's vocab in live spoken questions instead of just reading them.; Second Speaking rep: 12-min ChatGPT voice conversation based on CNN English Express phrasebook material.; Third Speaking rep: 11-min general ChatGPT voice conversation."
+      "notes": "Project kicked off! 🚀; Watched Suits S1E1 in English on Netflix. Fast-paced legal drama with lots of native American English dialogue — great for immersion listening.; Also watched S1E2. (Runtime estimated at ~0.7h to match E1 — adjust in `data.json` if the actual watch time differed.); Wrote a journal entry practicing discourse markers (however, on the other hand, finally) — see `10_Projects/SideProjects/English_Learning/English_Learning_Note_2026-09-21.md` in the Vault (not this repo).; Also watched The Mentalist S1E1 (Netflix, English audio). (Runtime estimated at ~0.7h, same standard-episode assumption as Suits — adjust if it differed.); Vocab session: business/legal idioms from Suits dialogue (in jeopardy, bad faith, due and payable, closer, etc.) — see `notes/vocabulary.md`.; First Speaking rep of the project: 10-min voice conversation with ChatGPT, using today's vocab in live spoken questions instead of just reading them.; Second Speaking rep: 12-min ChatGPT voice conversation based on CNN English Express phrasebook material.; Third Speaking rep: 11-min general ChatGPT voice conversation.; Late-night Audible session (22:30–24:00, 1.5h): \"The Story of Charlotte's Web\" — nonfiction/biography, a shift from drama dialogue to narrated prose listening."
     },
     "2026-09-22": {
       "date": "2026-09-22",
-      "hours": 0.0,
+      "hours": 0.2,
       "breakdown": [
         {
           "name": "Listening",
@@ -176,9 +176,9 @@
           "is_real": false
         },
         {
-          "name": "Speaking",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Speaking / Shadowing",
+          "hours": 0.2,
+          "completed": true,
           "is_real": false
         },
         {
@@ -188,7 +188,7 @@
           "is_real": false
         }
       ],
-      "notes": ""
+      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5)."
     },
     "2026-09-23": {
       "date": "2026-09-23",
@@ -506,8 +506,8 @@
     "currency": "JPY",
     "total_invested_yen": 1590,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 3.4,
-    "cost_per_hour_yen": 467.65,
+    "total_hours_from_paid_tools": 5.1,
+    "cost_per_hour_yen": 311.76,
     "breakdown": [
       {
         "id": "netflix",
@@ -518,8 +518,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 2.1,
-        "cost_per_hour_yen": 757.14,
+        "hours_logged": 3.6,
+        "cost_per_hour_yen": 441.67,
         "note": "Primary immersion content (English drama / documentary)"
       }
     ]
