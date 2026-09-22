@@ -443,7 +443,17 @@ function renderLogs(daily) {
     return;
   }
 
-  const sortedDates = Object.keys(daily).sort().reverse();
+  // Only actual logged days — the pre-populated future days in the monthly template
+  // (0 hrs, no notes) aren't "recent" activity and were burying real entries below them.
+  const sortedDates = Object.keys(daily)
+    .filter(d => daily[d].hours > 0 || daily[d].notes)
+    .sort()
+    .reverse();
+
+  if (sortedDates.length === 0) {
+    container.innerHTML = `<p style="font-size: 0.85rem; color: var(--text-muted);">No logs available yet.</p>`;
+    return;
+  }
 
   sortedDates.forEach(d => {
     const item = daily[d];
