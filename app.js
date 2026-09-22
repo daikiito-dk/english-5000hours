@@ -144,6 +144,14 @@ function renderDashboard(data) {
   // 2. KPI Cards
   document.getElementById("active-day-badge").textContent = `Day ${project.days_elapsed}`;
   document.getElementById("kpi-daily-pace").textContent = stats.daily_pace_required.toFixed(1);
+
+  const actualPaceEl = document.getElementById("kpi-actual-pace");
+  if (actualPaceEl) {
+    const actualPace = project.days_elapsed > 0 ? stats.total_hours / project.days_elapsed : 0;
+    actualPaceEl.textContent = actualPace.toFixed(1);
+    actualPaceEl.style.color = actualPace >= stats.daily_pace_required ? "#34d399" : "#f87171";
+  }
+
   document.getElementById("kpi-days-remaining").textContent = project.days_remaining.toLocaleString();
   document.getElementById("kpi-days-elapsed").textContent = project.days_elapsed;
   document.getElementById("kpi-vocab-count").textContent = vocabulary ? vocabulary.length : 0;
