@@ -65,6 +65,12 @@ def parse_logs():
         "writing": 0.0,
         "other": 0.0
     }
+    # Per-service hours from "[svc:id]" tags, for accurate ROI attribution (see compute_roi).
+    # tagged_categories records which category buckets have at least one such tag, so
+    # compute_roi knows whether to trust per-service data or fall back to the old
+    # rough whole-category estimate for a bucket that hasn't been tagged at all yet.
+    service_hours = {}
+    tagged_categories = set()
     daily_records = {}
     monthly_records = {}
 
@@ -112,6 +118,14 @@ def parse_logs():
                     is_real = "(real)" in name.lower()
                     name_clean = re.sub(r"\(real\)", "", name, flags=re.IGNORECASE).strip()
 
+                    # "[svc=id]" tag attributes this line's hours to a specific service in
+                    # costs.subscriptions (see compute_roi), for accurate per-service ROI.
+                    # Uses "=" not ":" because the outer cat_match regex splits the whole
+                    # line on the first ":", so a tag containing ":" would break that split.
+                    svc_match = re.search(r"\[svc=([\w-]+)\]", name_clean, re.IGNORECASE)
+                    svc_id = svc_match.group(1) if svc_match else None
+                    name_clean = re.sub(r"\[svc=[\w-]+\]", "", name_clean, flags=re.IGNORECASE).strip()
+
                     breakdown.append({
                         "name": name_clean,
                         "hours": hours,
@@ -123,16 +137,25 @@ def parse_logs():
                     name_lower = name_clean.lower()
                     if "listen" in name_lower or "podcast" in name_lower or "audio" in name_lower:
                         category_hours["listening"] += hours
+                        category_bucket = "listening"
                     elif "speak" in name_lower or "lesson" in name_lower or "conversation" in name_lower:
                         category_hours["speaking"] += hours
                         if is_real:
                             category_hours["speaking_real"] += hours
+                        category_bucket = "speaking"
                     elif "read" in name_lower or "vocab" in name_lower or "grammar" in name_lower or "book" in name_lower:
                         category_hours["reading"] += hours
+                        category_bucket = "reading"
                     elif "write" in name_lower or "journal" in name_lower or "essay" in name_lower:
                         category_hours["writing"] += hours
+                        category_bucket = "writing"
                     else:
                         category_hours["other"] += hours
+                        category_bucket = "other"
+
+                    if svc_id:
+                        service_hours[svc_id] = service_hours.get(svc_id, 0.0) + hours
+                        tagged_categories.add(category_bucket)
 
                 # Notes & Takeaways
                 if "Notes & Takeaways" in line:
@@ -162,7 +185,9 @@ def parse_logs():
         "total_hours": round(total_hours, 2),
         "category_hours": {k: round(v, 2) for k, v in category_hours.items()},
         "daily_records": daily_records,
-        "monthly_records": monthly_records
+        "monthly_records": monthly_records,
+        "service_hours": {k: round(v, 2) for k, v in service_hours.items()},
+        "tagged_categories": tagged_categories
     }
 
 def parse_vocabulary():
@@ -277,18 +302,32 @@ def compute_roi(log_data, today):
         if not end_str:
             monthly_spend += sub["monthly_yen"]
 
-        # Hours logged for this service's category (rough attribution by category keyword)
+        # Hours logged for this service. Prefer precise per-service hours from
+        # "[svc:id]" tags in the logs. Only fall back to the old rough whole-category
+        # estimate for a category bucket that has never used tagging at all — once any
+        # service in a bucket is tagged, every service in that bucket is expected to be
+        # tagged too, so an untagged/never-tagged service correctly shows 0 rather than
+        # inheriting hours that really belong to a different service in the same bucket.
         category_kw = sub.get("category", "").lower()
-        hours_for_service = 0.0
         cat_hours = log_data["category_hours"]
+        service_hours = log_data.get("service_hours", {})
+        tagged_categories = log_data.get("tagged_categories", set())
+
         if "listen" in category_kw or "drama" in category_kw or "podcast" in category_kw:
-            hours_for_service = cat_hours.get("listening", 0.0)
+            bucket = "listening"
         elif "speak" in category_kw or "conversation" in category_kw:
-            hours_for_service = cat_hours.get("speaking", 0.0)
+            bucket = "speaking"
         elif "read" in category_kw or "vocab" in category_kw:
-            hours_for_service = cat_hours.get("reading", 0.0)
+            bucket = "reading"
         elif "writ" in category_kw or "journal" in category_kw:
-            hours_for_service = cat_hours.get("writing", 0.0)
+            bucket = "writing"
+        else:
+            bucket = None
+
+        if bucket and bucket in tagged_categories:
+            hours_for_service = service_hours.get(sub.get("id", ""), 0.0)
+        elif bucket:
+            hours_for_service = cat_hours.get(bucket, 0.0)
         else:
             hours_for_service = log_data["total_hours"]
 

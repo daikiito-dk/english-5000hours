@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 12:27:28"
+    "last_updated": "2026-09-22 12:40:42"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -139,8 +139,14 @@
       "hours": 4.9,
       "breakdown": [
         {
-          "name": "Listening / Drama & Audiobook",
-          "hours": 3.6,
+          "name": "Listening / Drama",
+          "hours": 2.1,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Listening / Audiobook",
+          "hours": 1.5,
           "completed": true,
           "is_real": false
         },
@@ -182,8 +188,14 @@
           "is_real": false
         },
         {
-          "name": "Reading / Grammar / Vocab",
-          "hours": 0.5,
+          "name": "Reading / Vocab",
+          "hours": 0.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Reading / Grammar",
+          "hours": 0.3,
           "completed": true,
           "is_real": false
         }
@@ -498,16 +510,60 @@
         "end_month": null,
         "category": "Listening / Drama",
         "note": "Primary immersion content (English drama / documentary)"
+      },
+      {
+        "id": "duolingo",
+        "provider": "Duolingo, Inc.",
+        "service": "Duolingo",
+        "plan": "Free",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Vocab",
+        "note": "Grammar/vocab drill lessons"
+      },
+      {
+        "id": "duolingo-english-test",
+        "provider": "Duolingo, Inc.",
+        "service": "Duolingo English Test",
+        "plan": "Free",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Vocab",
+        "note": "Proficiency test practice"
+      },
+      {
+        "id": "audible",
+        "provider": "Audible, Inc. (Amazon)",
+        "service": "Audible",
+        "plan": "Campaign (¥99/mo, first 4 months)",
+        "monthly_yen": 99,
+        "start_month": "2026-09",
+        "end_month": "2026-12",
+        "category": "Listening / Audiobook",
+        "note": "Campaign pricing for the first 4 months (Sep-Dec 2026). Confirm renewal price before it lapses."
+      },
+      {
+        "id": "chatgpt",
+        "provider": "OpenAI",
+        "service": "ChatGPT",
+        "plan": "Free",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Speaking / Conversation",
+        "note": "Voice mode conversation practice"
       }
     ],
     "one_time": []
   },
   "roi": {
     "currency": "JPY",
-    "total_invested_yen": 1590,
+    "total_invested_yen": 1986,
     "monthly_spend_yen": 1590,
     "total_hours_from_paid_tools": 7.0,
-    "cost_per_hour_yen": 227.14,
+    "cost_per_hour_yen": 283.71,
     "breakdown": [
       {
         "id": "netflix",
@@ -518,9 +574,61 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 5.0,
-        "cost_per_hour_yen": 318.0,
+        "hours_logged": 3.5,
+        "cost_per_hour_yen": 454.29,
         "note": "Primary immersion content (English drama / documentary)"
+      },
+      {
+        "id": "duolingo",
+        "service": "Duolingo",
+        "provider": "Duolingo, Inc.",
+        "plan": "Free",
+        "category": "Reading / Vocab",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.2,
+        "cost_per_hour_yen": 0.0,
+        "note": "Grammar/vocab drill lessons"
+      },
+      {
+        "id": "duolingo-english-test",
+        "service": "Duolingo English Test",
+        "provider": "Duolingo, Inc.",
+        "plan": "Free",
+        "category": "Reading / Vocab",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.0,
+        "cost_per_hour_yen": null,
+        "note": "Proficiency test practice"
+      },
+      {
+        "id": "audible",
+        "service": "Audible",
+        "provider": "Audible, Inc. (Amazon)",
+        "plan": "Campaign (¥99/mo, first 4 months)",
+        "category": "Listening / Audiobook",
+        "monthly_yen": 99,
+        "months_active": 4,
+        "total_yen": 396,
+        "hours_logged": 1.5,
+        "cost_per_hour_yen": 264.0,
+        "note": "Campaign pricing for the first 4 months (Sep-Dec 2026). Confirm renewal price before it lapses."
+      },
+      {
+        "id": "chatgpt",
+        "service": "ChatGPT",
+        "provider": "OpenAI",
+        "plan": "Free",
+        "category": "Speaking / Conversation",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.6,
+        "cost_per_hour_yen": 0.0,
+        "note": "Voice mode conversation practice"
       }
     ]
   }
