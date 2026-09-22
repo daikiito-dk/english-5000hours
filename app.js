@@ -180,8 +180,30 @@ function renderDashboard(data) {
   if (data.roi) renderROI(data.roi);
 }
 
+// Service Breakdown table sort state, shared across re-renders triggered by header clicks
+let roiSortState = { key: null, dir: 1 };
+let lastRoiData = null;
+
+function initROITableSorting() {
+  const headers = document.querySelectorAll("#roi-breakdown-table th[data-sort-key]");
+  headers.forEach((th) => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.sortKey;
+      if (roiSortState.key === key) {
+        roiSortState.dir *= -1;
+      } else {
+        roiSortState.key = key;
+        roiSortState.dir = 1;
+      }
+      if (lastRoiData) renderROI(lastRoiData);
+    });
+  });
+}
+
 // Render Learning Investment & ROI Section
 function renderROI(roi) {
+  lastRoiData = roi;
+
   // KPI cards
   const fmt = (n) => n != null ? `¥${Number(n).toLocaleString()}` : "—";
 
@@ -209,11 +231,41 @@ function renderROI(roi) {
   if (!tbody) return;
 
   tbody.innerHTML = "";
-  const breakdown = roi.breakdown || [];
+  let breakdown = (roi.breakdown || []).slice();
 
   if (breakdown.length === 0) {
     tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; color:var(--text-muted); padding: 16px;">No services tracked yet.</td></tr>`;
     return;
+  }
+
+  // Apply current column sort (persists across re-renders via roiSortState)
+  const headers = document.querySelectorAll("#roi-breakdown-table th[data-sort-key]");
+  headers.forEach((th) => {
+    const arrow = th.querySelector(".sort-arrow");
+    const isSorted = th.dataset.sortKey === roiSortState.key;
+    th.classList.toggle("is-sorted", isSorted);
+    if (arrow) arrow.textContent = isSorted ? (roiSortState.dir === 1 ? "▲" : "▼") : "";
+  });
+
+  if (roiSortState.key) {
+    const key = roiSortState.key;
+    const dir = roiSortState.dir;
+    const activeTh = document.querySelector(`#roi-breakdown-table th[data-sort-key="${key}"]`);
+    const isText = activeTh && activeTh.dataset.sortType === "text";
+    breakdown.sort((a, b) => {
+      let av = a[key];
+      let bv = b[key];
+      if (isText) {
+        av = (av || "").toString().toLowerCase();
+        bv = (bv || "").toString().toLowerCase();
+        return av < bv ? -1 * dir : av > bv ? 1 * dir : 0;
+      }
+      // Numeric columns: null (e.g. no hours logged yet / no ¥/hr) always sorts last
+      if (av == null && bv == null) return 0;
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      return (av - bv) * dir;
+    });
   }
 
   breakdown.forEach(item => {
@@ -514,6 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initCalculator();
   initScrollAnimations();
+  initROITableSorting();
   loadData();
   renderCommitStreak();
 });

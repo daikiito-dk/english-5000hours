@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 12:47:04"
+    "last_updated": "2026-09-22 13:25:08"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 7.0,
-    "remaining_hours": 4993.0,
-    "progress_percent": 0.14,
+    "total_hours": 7.9,
+    "remaining_hours": 4992.1,
+    "progress_percent": 0.16,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 5.0,
+      "listening": 5.7,
       "speaking": 0.8,
       "speaking_real": 0.0,
-      "reading": 1.0,
+      "reading": 1.2,
       "writing": 0.2,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 7.0,
+      "hours": 7.9,
       "target": 33.0
     }
   },
@@ -173,16 +173,22 @@
     },
     "2026-09-22": {
       "date": "2026-09-22",
-      "hours": 2.1,
+      "hours": 3.0,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.4,
+          "hours": 2.1,
           "completed": true,
           "is_real": false
         },
         {
           "name": "Speaking / Shadowing",
+          "hours": 0.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Reading / Vocab",
           "hours": 0.2,
           "completed": true,
           "is_real": false
@@ -200,7 +206,7 @@
           "is_real": false
         }
       ],
-      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; 英語喫茶 (englishcafe.jp, free), Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2."
+      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; 英語喫茶 (englishcafe.jp, free), Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2.; First use of Weblio英単語 (still in its free campaign period): a 10-min vocab test.; Moved on to Suits S1E3 (new episode, first watch)."
     },
     "2026-09-23": {
       "date": "2026-09-23",
@@ -565,6 +571,17 @@
         "end_month": null,
         "category": "Reading / Grammar",
         "note": "Grammar textbook-style multiple-choice drills"
+      },
+      {
+        "id": "weblio",
+        "provider": "Weblio",
+        "service": "Weblio英単語 (プレミアムサービス)",
+        "plan": "Free campaign, then ¥330/mo",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Vocab",
+        "note": "Free campaign 2026-09-22 to 2026-11-20. Becomes ¥330/mo (tax incl.) from 2026-11-21 — update monthly_yen to 330 and split into a new entry starting 2026-11 once billing begins."
       }
     ],
     "one_time": []
@@ -573,8 +590,8 @@
     "currency": "JPY",
     "total_invested_yen": 1986,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 7.0,
-    "cost_per_hour_yen": 283.71,
+    "total_hours_from_paid_tools": 7.9,
+    "cost_per_hour_yen": 251.39,
     "breakdown": [
       {
         "id": "netflix",
@@ -585,8 +602,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 3.5,
-        "cost_per_hour_yen": 454.29,
+        "hours_logged": 4.2,
+        "cost_per_hour_yen": 378.57,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -653,6 +670,19 @@
         "hours_logged": 0.3,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar textbook-style multiple-choice drills"
+      },
+      {
+        "id": "weblio",
+        "service": "Weblio英単語 (プレミアムサービス)",
+        "provider": "Weblio",
+        "plan": "Free campaign, then ¥330/mo",
+        "category": "Reading / Vocab",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.2,
+        "cost_per_hour_yen": 0.0,
+        "note": "Free campaign 2026-09-22 to 2026-11-20. Becomes ¥330/mo (tax incl.) from 2026-11-21 — update monthly_yen to 330 and split into a new entry starting 2026-11 once billing begins."
       }
     ]
   }

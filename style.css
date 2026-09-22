@@ -1119,9 +1119,12 @@ main.container {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-height: 380px;
+  max-height: 420px;
   overflow-y: auto;
   padding-right: 6px;
+  padding-bottom: 24px;
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(to bottom, black calc(100% - 28px), transparent 100%);
 }
 
 .log-entry {
@@ -1208,8 +1211,11 @@ main.container {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-height: 320px;
+  max-height: 360px;
   overflow-y: auto;
+  padding-bottom: 24px;
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(to bottom, black calc(100% - 28px), transparent 100%);
 }
 
 .vocab-card {
@@ -1441,6 +1447,26 @@ footer a {
   color: var(--text-secondary);
   border-bottom: 1px solid var(--border-color);
   white-space: nowrap;
+}
+
+.roi-table th[data-sort-key] {
+  cursor: pointer;
+  user-select: none;
+}
+
+.roi-table th[data-sort-key]:hover {
+  color: var(--accent-primary);
+}
+
+.roi-table th.is-sorted {
+  color: var(--accent-primary);
+}
+
+.roi-table .sort-arrow {
+  display: inline-block;
+  width: 0.9em;
+  margin-left: 2px;
+  opacity: 0.6;
 }
 
 .roi-table tbody tr {

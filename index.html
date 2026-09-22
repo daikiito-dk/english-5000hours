@@ -568,14 +568,14 @@ gantt
           <table class="roi-table" id="roi-breakdown-table">
             <thead>
               <tr>
-                <th>Service</th>
-                <th>Plan</th>
-                <th>Category</th>
-                <th>¥/Month</th>
-                <th>Months</th>
-                <th>Total ¥</th>
-                <th>Hours Used</th>
-                <th>¥ per Hour</th>
+                <th data-sort-key="service" data-sort-type="text">Service<span class="sort-arrow"></span></th>
+                <th data-sort-key="plan" data-sort-type="text">Plan<span class="sort-arrow"></span></th>
+                <th data-sort-key="category" data-sort-type="text">Category<span class="sort-arrow"></span></th>
+                <th data-sort-key="monthly_yen" data-sort-type="number">¥/Month<span class="sort-arrow"></span></th>
+                <th data-sort-key="months_active" data-sort-type="number">Months<span class="sort-arrow"></span></th>
+                <th data-sort-key="total_yen" data-sort-type="number">Total ¥<span class="sort-arrow"></span></th>
+                <th data-sort-key="hours_logged" data-sort-type="number">Hours Used<span class="sort-arrow"></span></th>
+                <th data-sort-key="cost_per_hour_yen" data-sort-type="number">¥ per Hour<span class="sort-arrow"></span></th>
               </tr>
             </thead>
             <tbody id="roi-table-body">
