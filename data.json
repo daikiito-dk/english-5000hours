@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 15:16:54"
+    "last_updated": "2026-09-22 15:20:23"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 8.6,
-    "remaining_hours": 4991.4,
-    "progress_percent": 0.17,
+    "total_hours": 9.3,
+    "remaining_hours": 4990.7,
+    "progress_percent": 0.19,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 6.4,
+      "listening": 7.1,
       "speaking": 0.8,
       "speaking_real": 0.0,
       "reading": 1.2,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 8.6,
+      "hours": 9.3,
       "target": 33.0
     }
   },
@@ -173,11 +173,11 @@
     },
     "2026-09-22": {
       "date": "2026-09-22",
-      "hours": 3.7,
+      "hours": 4.4,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 2.8,
+          "hours": 3.5,
           "completed": true,
           "is_real": false
         },
@@ -206,7 +206,7 @@
           "is_real": false
         }
       ],
-      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; 英語喫茶 (englishcafe.jp, free), Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2.; First use of Weblio英単語 (still in its free campaign period): a 10-min vocab test.; Moved on to Suits S1E3 (new episode, first watch).; Started a new show: The Blacklist S1E1 (Netflix, English audio)."
+      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; 英語喫茶 (englishcafe.jp, free), Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2.; First use of Weblio英単語 (still in its free campaign period): a 10-min vocab test.; Moved on to Suits S1E3 (new episode, first watch).; Started a new show: The Blacklist S1E1 (Netflix, English audio).; Back to Suits for S1E4."
     },
     "2026-09-23": {
       "date": "2026-09-23",
@@ -591,11 +591,11 @@
     "currency": "JPY",
     "total_invested_yen": 1986,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 8.6,
-    "cost_per_hour_yen": 230.93,
+    "total_hours_from_paid_tools": 9.3,
+    "cost_per_hour_yen": 213.55,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 33540.0,
-    "tco_yen": 35526.0,
+    "time_value_yen": 36270.0,
+    "tco_yen": 38256.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -606,8 +606,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 4.9,
-        "cost_per_hour_yen": 324.49,
+        "hours_logged": 5.6,
+        "cost_per_hour_yen": 283.93,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
