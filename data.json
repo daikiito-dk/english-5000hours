@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 12:40:42"
+    "last_updated": "2026-09-22 12:47:04"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -200,7 +200,7 @@
           "is_real": false
         }
       ],
-      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; Grammar textbook, Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2."
+      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme).; 英語喫茶 (englishcafe.jp, free), Day 1 of a present/past tense drill series: be-verb present, verb present, be-verb past, verb past — foundational review ahead of the Phase 1 target (perfect tenses, passive voice, reported speech — [#4](https://github.com/daikiito-dk/english-5000hours/issues/4)).; Also re-watched Suits S1E2."
     },
     "2026-09-23": {
       "date": "2026-09-23",
@@ -554,6 +554,17 @@
         "end_month": null,
         "category": "Speaking / Conversation",
         "note": "Voice mode conversation practice"
+      },
+      {
+        "id": "englishcafe",
+        "provider": "EnglishCafe.jp",
+        "service": "英語喫茶 (EnglishCafe.jp)",
+        "plan": "Free",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Grammar",
+        "note": "Grammar textbook-style multiple-choice drills"
       }
     ],
     "one_time": []
@@ -629,6 +640,19 @@
         "hours_logged": 0.6,
         "cost_per_hour_yen": 0.0,
         "note": "Voice mode conversation practice"
+      },
+      {
+        "id": "englishcafe",
+        "service": "英語喫茶 (EnglishCafe.jp)",
+        "provider": "EnglishCafe.jp",
+        "plan": "Free",
+        "category": "Reading / Grammar",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.3,
+        "cost_per_hour_yen": 0.0,
+        "note": "Grammar textbook-style multiple-choice drills"
       }
     ]
   }
