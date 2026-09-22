@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 11:09:46"
+    "last_updated": "2026-09-22 11:44:00"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,8 +39,8 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 5.8,
-    "remaining_hours": 4994.2,
+    "total_hours": 6.0,
+    "remaining_hours": 4994.0,
     "progress_percent": 0.12,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
@@ -49,7 +49,7 @@
       "listening": 4.3,
       "speaking": 0.8,
       "speaking_real": 0.0,
-      "reading": 0.5,
+      "reading": 0.7,
       "writing": 0.2,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 5.8,
+      "hours": 6.0,
       "target": 33.0
     }
   },
@@ -167,7 +167,7 @@
     },
     "2026-09-22": {
       "date": "2026-09-22",
-      "hours": 0.9,
+      "hours": 1.1,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -182,13 +182,13 @@
           "is_real": false
         },
         {
-          "name": "Reading / Vocab",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Reading / Grammar / Vocab",
+          "hours": 0.2,
+          "completed": true,
           "is_real": false
         }
       ],
-      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition."
+      "notes": "Shadowing practice (listen → repeat x3) targets the pronunciation/linking-and-rhythm gap from Phase 1 — see [#5](https://github.com/daikiito-dk/english-5000hours/issues/5).; Re-watched Suits S1E1 — second pass, now with the vocab from `notes/vocabulary.md` already in hand (in jeopardy, bad faith, closer, etc.), so it doubles as reinforcement rather than pure repetition.; Tried a Duolingo lesson (Section 1 Unit 1, travel-comparison theme)."
     },
     "2026-09-23": {
       "date": "2026-09-23",
@@ -506,8 +506,8 @@
     "currency": "JPY",
     "total_invested_yen": 1590,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 5.8,
-    "cost_per_hour_yen": 274.14,
+    "total_hours_from_paid_tools": 6.0,
+    "cost_per_hour_yen": 265.0,
     "breakdown": [
       {
         "id": "netflix",
