@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 2,
     "days_remaining": 1518,
-    "last_updated": "2026-09-22 15:09:39"
+    "last_updated": "2026-09-22 15:16:54"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -689,5 +689,21 @@
         "note": "Free campaign 2026-09-22 to 2026-11-20. Becomes ¥330/mo (tax incl.) from 2026-11-21 — update monthly_yen to 330 and split into a new entry starting 2026-11 once billing begins."
       }
     ]
+  },
+  "output_roi": {
+    "assessments": [
+      {
+        "date": "2026-09-21",
+        "type": "TOEIC",
+        "score": 420,
+        "cefr_overall": "B1 low",
+        "note": "Baseline (CEST Speaking Assessment 2025-05-26 + TOEIC 420)"
+      }
+    ],
+    "score_type": "TOEIC",
+    "baseline_score": 420,
+    "latest_score": 420,
+    "cp_point_yen": null,
+    "cefr_level_up": null
   }
 }

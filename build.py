@@ -391,6 +391,66 @@ def compute_roi(log_data, today):
     }
 
 
+def load_assessments():
+    """
+    Reads the assessment history from the existing data.json (persisted the same
+    way costs.subscriptions is), seeding it with the baseline on first run. New
+    entries (a retest, a CEFR re-evaluation) are added by editing this array
+    directly in data.json and re-running build.py.
+    """
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            existing = json.load(f)
+        assessments = existing.get("assessments")
+        if assessments:
+            return assessments
+    except Exception:
+        pass
+    return [{
+        "date": "2026-09-21",
+        "type": "TOEIC",
+        "score": 420,
+        "cefr_overall": "B1 low",
+        "note": "Baseline (CEST Speaking Assessment 2025-05-26 + TOEIC 420)"
+    }]
+
+
+def compute_output_roi(assessments, total_invested_yen, total_hours):
+    """
+    Output-side ROI: cost per test-score point gained, and the total cost/time
+    to go up one CEFR level. Both need a second assessment to compare against
+    the baseline — with only one data point on file, they report as None so the
+    UI can show a clear "not available yet" state instead of a fabricated number.
+    """
+    sorted_assessments = sorted(assessments, key=lambda a: a["date"])
+    baseline = sorted_assessments[0]
+    latest = sorted_assessments[-1]
+
+    cp_point_yen = None
+    if len(sorted_assessments) >= 2 and latest.get("type") == baseline.get("type"):
+        score_gain = latest.get("score", 0) - baseline.get("score", 0)
+        if score_gain > 0:
+            cp_point_yen = round(total_invested_yen / score_gain, 2)
+
+    cefr_level_up = None
+    if len(sorted_assessments) >= 2 and latest.get("cefr_overall") != baseline.get("cefr_overall"):
+        cefr_level_up = {
+            "from": baseline.get("cefr_overall"),
+            "to": latest.get("cefr_overall"),
+            "total_yen": total_invested_yen,
+            "total_hours": round(total_hours, 2)
+        }
+
+    return {
+        "assessments": sorted_assessments,
+        "score_type": latest.get("type"),
+        "baseline_score": baseline.get("score"),
+        "latest_score": latest.get("score"),
+        "cp_point_yen": cp_point_yen,
+        "cefr_level_up": cefr_level_up
+    }
+
+
 def build_data():
     today = date(2026, 9, 21) # Baseline project start
     try:
@@ -408,6 +468,8 @@ def build_data():
     vocab_data = parse_vocabulary()
     reading_data = parse_reading_notes()
     roi_data = compute_roi(log_data, today)
+    assessments = load_assessments()
+    output_roi_data = compute_output_roi(assessments, roi_data["total_invested_yen"], log_data["total_hours"])
 
     total_hours = log_data["total_hours"]
     progress_pct = round((total_hours / TARGET_HOURS) * 100, 2)
@@ -467,7 +529,8 @@ def build_data():
         "vocabulary": vocab_data["items"],
         "reading_notes": reading_data["items"],
         "costs": roi_data.pop("_costs_config", {"currency": "JPY", "subscriptions": [], "one_time": []}),
-        "roi": roi_data
+        "roi": roi_data,
+        "output_roi": output_roi_data
     }
 
     with open("data.json", "w", encoding="utf-8") as f:

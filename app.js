@@ -186,6 +186,42 @@ function renderDashboard(data) {
 
   // 8. ROI
   if (data.roi) renderROI(data.roi);
+
+  // 9. Output ROI (score/level efficiency)
+  if (data.output_roi) renderOutputROI(data.output_roi);
+}
+
+// Render Output ROI: cost per test-score point, cost to reach the next CEFR level.
+// Both stay "—" until a second assessment exists to compare against the baseline.
+function renderOutputROI(outputRoi) {
+  const fmt = (n) => n != null ? `¥${Number(n).toLocaleString()}` : "—";
+
+  const cppointEl = document.getElementById("output-roi-cppoint");
+  const cppointDescEl = document.getElementById("output-roi-cppoint-desc");
+  if (cppointEl) {
+    if (outputRoi.cp_point_yen != null) {
+      cppointEl.textContent = `${fmt(outputRoi.cp_point_yen)} / pt`;
+      if (cppointDescEl) {
+        cppointDescEl.textContent = `${outputRoi.score_type} ${outputRoi.baseline_score} → ${outputRoi.latest_score}`;
+      }
+    } else {
+      cppointEl.textContent = "—";
+    }
+  }
+
+  const cefrEl = document.getElementById("output-roi-cefr");
+  const cefrDescEl = document.getElementById("output-roi-cefr-desc");
+  if (cefrEl) {
+    const levelUp = outputRoi.cefr_level_up;
+    if (levelUp) {
+      cefrEl.textContent = `${fmt(levelUp.total_yen)} / ${levelUp.total_hours.toFixed(1)}h`;
+      if (cefrDescEl) {
+        cefrDescEl.textContent = `${levelUp.from} → ${levelUp.to}`;
+      }
+    } else {
+      cefrEl.textContent = "—";
+    }
+  }
 }
 
 // Service Breakdown table sort state, shared across re-renders triggered by header clicks

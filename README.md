@@ -113,6 +113,7 @@ english-5000hours/
 1. **記録**: `logs/YYYY-MM.md` にその日の学習時間をカテゴリ別に記録。
    - Speaking項目のうち、HR面談・エージェントとの電話など**実戦(低ストレス練習ではない)の会話**は `Speaking (real): 0.5 hr` のように `(real)` タグを付ける。`build.py` が `category_hours.speaking_real` として練習分と別集計する。
 2. **定着**: 新出単語は `notes/vocabulary.md`、読書/視聴メモは `notes/reading-notes.md`、ライティング練習は `notes/journal/` に追記。
+   - TOEIC等を再受験した/CEFR再評価を受けた場合は `data.json` の `assessments` 配列に `{"date": "YYYY-MM-DD", "type": "TOEIC", "score": ..., "cefr_overall": "..."}` を追記してから `python3 build.py` を実行する。「🏁 Baseline」の **Output ROI**(スコア上昇効率 / CEFRレベル到達コスト)がベースラインとの比較で自動計算される。
 3. **同期 (Daily Commit & Push)**: 
    ```bash
    git add .
