@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 3,
     "days_remaining": 1517,
-    "last_updated": "2026-09-23 15:53:32"
+    "last_updated": "2026-09-23 16:35:04"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 12.7,
-    "remaining_hours": 4987.3,
-    "progress_percent": 0.25,
+    "total_hours": 13.2,
+    "remaining_hours": 4986.8,
+    "progress_percent": 0.26,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
       "listening": 9.0,
-      "speaking": 1.1,
+      "speaking": 1.6,
       "speaking_real": 0.0,
       "reading": 1.6,
       "writing": 1.0,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 12.7,
+      "hours": 13.2,
       "target": 33.0
     }
   },
@@ -216,7 +216,7 @@
     },
     "2026-09-23": {
       "date": "2026-09-23",
-      "hours": 1.9,
+      "hours": 2.4,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -227,6 +227,12 @@
         {
           "name": "Speaking / AI Voice Practice",
           "hours": 0.3,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Speaking / Shadowing",
+          "hours": 0.5,
           "completed": true,
           "is_real": false
         },
@@ -243,7 +249,7 @@
           "is_real": false
         }
       ],
-      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7)).; 20-min ChatGPT voice conversation — third day in a row with a Speaking rep.; Started Friends S1E1 (Netflix, English audio) — sitcom format, faster/more colloquial dialogue than the dramas so far."
+      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7)).; 20-min ChatGPT voice conversation — third day in a row with a Speaking rep.; Started Friends S1E1 (Netflix, English audio) — sitcom format, faster/more colloquial dialogue than the dramas so far.; 32-min shadowing session on YouTube Premium (English phrases, listen → repeat x3) — second shadowing rep of the project, same pronunciation-focused drill as Day 2."
     },
     "2026-09-24": {
       "date": "2026-09-24",
@@ -643,11 +649,11 @@
     "currency": "JPY",
     "total_invested_yen": 14786,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 12.7,
-    "cost_per_hour_yen": 1164.25,
+    "total_hours_from_paid_tools": 13.2,
+    "cost_per_hour_yen": 1120.15,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 49530.0,
-    "tco_yen": 64316.0,
+    "time_value_yen": 51480.0,
+    "tco_yen": 66266.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -749,8 +755,8 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 0.2,
-        "cost_per_hour_yen": 64000.0,
+        "hours_logged": 0.7,
+        "cost_per_hour_yen": 18285.71,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment. Used for English-learning content, incl. shadowing practice."
       }
     ]
