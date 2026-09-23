@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 3,
     "days_remaining": 1517,
-    "last_updated": "2026-09-23 15:01:57"
+    "last_updated": "2026-09-23 15:33:29"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 12.0,
-    "remaining_hours": 4988.0,
-    "progress_percent": 0.24,
+    "total_hours": 12.3,
+    "remaining_hours": 4987.7,
+    "progress_percent": 0.25,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
       "listening": 8.6,
-      "speaking": 0.8,
+      "speaking": 1.1,
       "speaking_real": 0.0,
       "reading": 1.6,
       "writing": 1.0,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 12.0,
+      "hours": 12.3,
       "target": 33.0
     }
   },
@@ -216,7 +216,7 @@
     },
     "2026-09-23": {
       "date": "2026-09-23",
-      "hours": 1.2,
+      "hours": 1.5,
       "breakdown": [
         {
           "name": "Listening",
@@ -225,9 +225,9 @@
           "is_real": false
         },
         {
-          "name": "Speaking",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Speaking / AI Voice Practice",
+          "hours": 0.3,
+          "completed": true,
           "is_real": false
         },
         {
@@ -243,7 +243,7 @@
           "is_real": false
         }
       ],
-      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7))."
+      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7)).; 20-min ChatGPT voice conversation — third day in a row with a Speaking rep."
     },
     "2026-09-24": {
       "date": "2026-09-24",
@@ -643,11 +643,11 @@
     "currency": "JPY",
     "total_invested_yen": 14786,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 12.0,
-    "cost_per_hour_yen": 1232.17,
+    "total_hours_from_paid_tools": 12.3,
+    "cost_per_hour_yen": 1202.11,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 46800.0,
-    "tco_yen": 61586.0,
+    "time_value_yen": 47970.0,
+    "tco_yen": 62756.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -710,7 +710,7 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 0,
-        "hours_logged": 0.6,
+        "hours_logged": 0.9,
         "cost_per_hour_yen": 0.0,
         "note": "Voice mode conversation practice"
       },
