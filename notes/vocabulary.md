@@ -119,6 +119,41 @@
 - **例文**:
   - *He's our best closer.* (彼はうちの最高のクローザーだ。)
 
+### have a funny face
+- **意味**: 変な/おかしな顔をしている、面白い顔つきをしている
+- **ニュアンス / 文脈**: 見た目や表情がコミカル・愛嬌があることを指す口語表現。相手を茶化す軽いニュアンスで使われることが多く、面と向かって言うとからかい・失礼に聞こえる場合もあるので relationship次第。
+- **例文**:
+  - *He has a funny face when he's concentrating.* (集中してる時、彼はおかしな顔になる。)
+- **類義語 / 関連表現**: make a face, pull a face
+
+### It's a big deal to me
+- **意味**: それは私にとって重要なことだ、大きな意味を持つ
+- **ニュアンス / 文脈**: 相手が軽く扱っている（"It's not a big deal"）ことに対して、自分にとっては重要だと主張する時によく使う対比表現。
+- **例文**:
+  - *You might think it's nothing, but it's a big deal to me.* (君にとっては何でもないことかもしれないけど、僕にとっては大きなことなんだ。)
+- **類義語 / 関連表現**: it matters a lot to me／反対語: it's no big deal
+
+### It was a story about ~
+- **意味**: 〜についての話だった
+- **ニュアンス / 文脈**: 読んだ本・聞いた話の主題を紹介する時の定型的な文の始め方。
+- **例文**:
+  - *It was a story about a boy who lost his way home.* (家に帰れなくなった少年についての話だった。)
+- **類義語 / 関連表現**: It's about ~, The story is about ~
+
+### foot → feet（不規則複数形）
+- **意味**: foot（足）の複数形は foots ではなく feet になる（不規則変化）
+- **ニュアンス / 文脈**: 単数形の一部の音が変わって複数形になるパターン。他に child→children、tooth→teeth、mouse→mice なども同じ仲間。
+- **例文**:
+  - *His feet are black and white.* (彼の両足は黒と白だ。)
+- **類義語 / 関連表現**: child → children, tooth → teeth, mouse → mice
+
+### get hurt
+- **意味**: 怪我をする、(比喩的に)傷つく
+- **ニュアンス / 文脈**: 事故やアクシデントで怪我をした時によく使うシンプルな表現。原因は when/because節で続けることが多い。
+- **例文**:
+  - *He got hurt when he broke a dish.* (彼は皿を割った時に怪我をした。)
+- **類義語 / 関連表現**: get injured, hurt oneself
+
 ---
 
 **要確認（聞き取り・意図が曖昧）**

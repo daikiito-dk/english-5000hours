@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 3,
     "days_remaining": 1517,
-    "last_updated": "2026-09-23 14:11:01"
+    "last_updated": "2026-09-23 15:01:57"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,9 +39,9 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 11.2,
-    "remaining_hours": 4988.8,
-    "progress_percent": 0.22,
+    "total_hours": 12.0,
+    "remaining_hours": 4988.0,
+    "progress_percent": 0.24,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
@@ -50,10 +50,10 @@
       "speaking": 0.8,
       "speaking_real": 0.0,
       "reading": 1.6,
-      "writing": 0.2,
+      "writing": 1.0,
       "other": 0.0
     },
-    "vocabulary_count": 14,
+    "vocabulary_count": 19,
     "reading_notes_count": 1
   },
   "phases": [
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 11.2,
+      "hours": 12.0,
       "target": 33.0
     }
   },
@@ -216,7 +216,7 @@
     },
     "2026-09-23": {
       "date": "2026-09-23",
-      "hours": 0.4,
+      "hours": 1.2,
       "breakdown": [
         {
           "name": "Listening",
@@ -235,9 +235,15 @@
           "hours": 0.4,
           "completed": true,
           "is_real": false
+        },
+        {
+          "name": "Writing / Journal",
+          "hours": 0.8,
+          "completed": true,
+          "is_real": false
         }
       ],
-      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review."
+      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7))."
     },
     "2026-09-24": {
       "date": "2026-09-24",
@@ -499,6 +505,36 @@
       "meaning": "（交渉・営業で）契約を決める人、クロージングが得意な人",
       "context": "セールス・交渉の文脈でよく使われる人物評。",
       "example": "*意味"
+    },
+    {
+      "term": "have a funny face",
+      "meaning": "変な/おかしな顔をしている、面白い顔つきをしている",
+      "context": "見た目や表情がコミカル・愛嬌があることを指す口語表現。相手を茶化す軽いニュアンスで使われることが多く、面と向かって言うとからかい・失礼に聞こえる場合もあるので relationship次第。",
+      "example": "*意味"
+    },
+    {
+      "term": "It's a big deal to me",
+      "meaning": "それは私にとって重要なことだ、大きな意味を持つ",
+      "context": "相手が軽く扱っている（\"It's not a big deal\"）ことに対して、自分にとっては重要だと主張する時によく使う対比表現。",
+      "example": "*意味"
+    },
+    {
+      "term": "It was a story about ~",
+      "meaning": "〜についての話だった",
+      "context": "読んだ本・聞いた話の主題を紹介する時の定型的な文の始め方。",
+      "example": "*意味"
+    },
+    {
+      "term": "foot → feet（不規則複数形）",
+      "meaning": "foot（足）の複数形は foots ではなく feet になる（不規則変化）",
+      "context": "単数形の一部の音が変わって複数形になるパターン。他に child→children、tooth→teeth、mouse→mice なども同じ仲間。",
+      "example": "*意味"
+    },
+    {
+      "term": "get hurt",
+      "meaning": "怪我をする、(比喩的に)傷つく",
+      "context": "事故やアクシデントで怪我をした時によく使うシンプルな表現。原因は when/because節で続けることが多い。",
+      "example": "*意味"
     }
   ],
   "reading_notes": [
@@ -607,11 +643,11 @@
     "currency": "JPY",
     "total_invested_yen": 14786,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 11.2,
-    "cost_per_hour_yen": 1320.18,
+    "total_hours_from_paid_tools": 12.0,
+    "cost_per_hour_yen": 1232.17,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 43680.0,
-    "tco_yen": 58466.0,
+    "time_value_yen": 46800.0,
+    "tco_yen": 61586.0,
     "breakdown": [
       {
         "id": "netflix",
