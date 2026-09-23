@@ -270,6 +270,38 @@ def parse_reading_notes():
     return {"count": len(items), "items": items}
 
 
+def _hours_for_category(category_str, item_id, log_data):
+    """
+    Shared by subscriptions and one-time costs: hours logged for a cost item's
+    category. Prefers precise per-service hours from "[svc=id]" tags; only falls
+    back to the old rough whole-category estimate for a bucket that has never
+    used tagging at all. Once any item in a bucket is tagged, every item in that
+    bucket is expected to be tagged too, so an untagged one correctly shows 0
+    rather than inheriting hours that really belong to a different item.
+    """
+    category_kw = category_str.lower()
+    cat_hours = log_data["category_hours"]
+    service_hours = log_data.get("service_hours", {})
+    tagged_categories = log_data.get("tagged_categories", set())
+
+    if "listen" in category_kw or "drama" in category_kw or "podcast" in category_kw:
+        bucket = "listening"
+    elif "speak" in category_kw or "conversation" in category_kw:
+        bucket = "speaking"
+    elif "read" in category_kw or "vocab" in category_kw:
+        bucket = "reading"
+    elif "writ" in category_kw or "journal" in category_kw:
+        bucket = "writing"
+    else:
+        bucket = None
+
+    if bucket and bucket in tagged_categories:
+        return service_hours.get(item_id, 0.0)
+    elif bucket:
+        return cat_hours.get(bucket, 0.0)
+    return log_data["total_hours"]
+
+
 def compute_roi(log_data, today):
     """
     Reads costs from the existing data.json (or defaults),
@@ -302,35 +334,7 @@ def compute_roi(log_data, today):
         if not end_str:
             monthly_spend += sub["monthly_yen"]
 
-        # Hours logged for this service. Prefer precise per-service hours from
-        # "[svc:id]" tags in the logs. Only fall back to the old rough whole-category
-        # estimate for a category bucket that has never used tagging at all — once any
-        # service in a bucket is tagged, every service in that bucket is expected to be
-        # tagged too, so an untagged/never-tagged service correctly shows 0 rather than
-        # inheriting hours that really belong to a different service in the same bucket.
-        category_kw = sub.get("category", "").lower()
-        cat_hours = log_data["category_hours"]
-        service_hours = log_data.get("service_hours", {})
-        tagged_categories = log_data.get("tagged_categories", set())
-
-        if "listen" in category_kw or "drama" in category_kw or "podcast" in category_kw:
-            bucket = "listening"
-        elif "speak" in category_kw or "conversation" in category_kw:
-            bucket = "speaking"
-        elif "read" in category_kw or "vocab" in category_kw:
-            bucket = "reading"
-        elif "writ" in category_kw or "journal" in category_kw:
-            bucket = "writing"
-        else:
-            bucket = None
-
-        if bucket and bucket in tagged_categories:
-            hours_for_service = service_hours.get(sub.get("id", ""), 0.0)
-        elif bucket:
-            hours_for_service = cat_hours.get(bucket, 0.0)
-        else:
-            hours_for_service = log_data["total_hours"]
-
+        hours_for_service = _hours_for_category(sub.get("category", ""), sub.get("id", ""), log_data)
         cph = round(cost_total / hours_for_service, 2) if hours_for_service > 0 else None
 
         breakdown.append({
@@ -347,10 +351,11 @@ def compute_roi(log_data, today):
             "note": sub.get("note", "")
         })
 
-    # One-time purchases
+    # One-time / lump-sum purchases (e.g. an annual plan paid upfront) — the full
+    # amount counts as spent immediately, not amortized across the months it covers.
     for item in costs_config.get("one_time", []):
         total_invested += item.get("yen", 0)
-        hours_for_item = item.get("hours_logged", 0.0)
+        hours_for_item = _hours_for_category(item.get("category", ""), item.get("id", ""), log_data)
         cph = round(item["yen"] / hours_for_item, 2) if hours_for_item > 0 else None
         breakdown.append({
             "id": item.get("id", ""),
