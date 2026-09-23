@@ -353,6 +353,9 @@ def compute_roi(log_data, today):
 
     # One-time / lump-sum purchases (e.g. an annual plan paid upfront) — the full
     # amount counts as spent immediately, not amortized across the months it covers.
+    # "monthly_equivalent_yen" is display-only (what it works out to per month, for
+    # comparing against subscriptions in the table) — it is NOT added to
+    # monthly_spend, since nothing is actually billed monthly for this item.
     for item in costs_config.get("one_time", []):
         total_invested += item.get("yen", 0)
         hours_for_item = _hours_for_category(item.get("category", ""), item.get("id", ""), log_data)
@@ -363,7 +366,7 @@ def compute_roi(log_data, today):
             "provider": item.get("provider", ""),
             "plan": "One-time",
             "category": item.get("category", ""),
-            "monthly_yen": 0,
+            "monthly_yen": item.get("monthly_equivalent_yen", 0),
             "months_active": 1,
             "total_yen": item.get("yen", 0),
             "hours_logged": round(hours_for_item, 2),

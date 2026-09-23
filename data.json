@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 3,
     "days_remaining": 1517,
-    "last_updated": "2026-09-23 17:19:08"
+    "last_updated": "2026-09-23 17:34:41"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,8 +39,8 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 13.4,
-    "remaining_hours": 4986.6,
+    "total_hours": 13.6,
+    "remaining_hours": 4986.4,
     "progress_percent": 0.27,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
@@ -49,7 +49,7 @@
       "listening": 9.2,
       "speaking": 1.6,
       "speaking_real": 0.0,
-      "reading": 1.6,
+      "reading": 1.8,
       "writing": 1.0,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 13.4,
+      "hours": 13.6,
       "target": 33.0
     }
   },
@@ -216,7 +216,7 @@
     },
     "2026-09-23": {
       "date": "2026-09-23",
-      "hours": 2.6,
+      "hours": 2.8,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -249,13 +249,19 @@
           "is_real": false
         },
         {
+          "name": "Reading / Grammar",
+          "hours": 0.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
           "name": "Writing / Journal",
           "hours": 0.8,
           "completed": true,
           "is_real": false
         }
       ],
-      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7)).; 20-min ChatGPT voice conversation — third day in a row with a Speaking rep.; Started Friends S1E1 (Netflix, English audio) — sitcom format, faster/more colloquial dialogue than the dramas so far.; Watched a TED talk on YouTube (15 min) — monologue/prepared-speech register, different from drama dialogue or conversational shadowing.; 32-min shadowing session on YouTube Premium (English phrases, listen → repeat x3) — second shadowing rep of the project, same pronunciation-focused drill as Day 2."
+      "notes": "Second Weblio英単語 session (still free campaign): vocab test + 単語帳 review.; 45-min writing + correction session applying the newly learned Weblio vocab — active production, not just recognition, which is the bigger lever for the Grammar/Coherence gaps ([#4](https://github.com/daikiito-dk/english-5000hours/issues/4), [#7](https://github.com/daikiito-dk/english-5000hours/issues/7)).; 20-min ChatGPT voice conversation — third day in a row with a Speaking rep.; Started Friends S1E1 (Netflix, English audio) — sitcom format, faster/more colloquial dialogue than the dramas so far.; Watched a TED talk on YouTube (15 min) — monologue/prepared-speech register, different from drama dialogue or conversational shadowing.; 英語喫茶, Day 2 of the drill series: negation & questions — natural next step after Day 1's present/past tense basics.; 32-min shadowing session on YouTube Premium (English phrases, listen → repeat x3) — second shadowing rep of the project, same pronunciation-focused drill as Day 2."
     },
     "2026-09-24": {
       "date": "2026-09-24",
@@ -645,9 +651,10 @@
         "name": "YouTube Premium",
         "provider": "Google LLC",
         "yen": 12800,
+        "monthly_equivalent_yen": 1066.67,
         "date": "2026-09-23",
         "category": "Speaking / Shadowing",
-        "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment. Used for English-learning content, incl. shadowing practice."
+        "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       }
     ]
   },
@@ -655,11 +662,11 @@
     "currency": "JPY",
     "total_invested_yen": 14786,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 13.4,
-    "cost_per_hour_yen": 1103.43,
+    "total_hours_from_paid_tools": 13.6,
+    "cost_per_hour_yen": 1087.21,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 52260.0,
-    "tco_yen": 67046.0,
+    "time_value_yen": 53040.0,
+    "tco_yen": 67826.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -735,7 +742,7 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 0,
-        "hours_logged": 0.3,
+        "hours_logged": 0.5,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar textbook-style multiple-choice drills"
       },
@@ -758,12 +765,12 @@
         "provider": "Google LLC",
         "plan": "One-time",
         "category": "Speaking / Shadowing",
-        "monthly_yen": 0,
+        "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
         "hours_logged": 0.9,
         "cost_per_hour_yen": 14222.22,
-        "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment. Used for English-learning content, incl. shadowing practice."
+        "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       }
     ]
   },
