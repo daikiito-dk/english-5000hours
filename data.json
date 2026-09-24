@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 4,
     "days_remaining": 1516,
-    "last_updated": "2026-09-24 21:31:59"
+    "last_updated": "2026-09-24 21:58:43"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 19.2,
-    "remaining_hours": 4980.8,
-    "progress_percent": 0.38,
+    "total_hours": 19.6,
+    "remaining_hours": 4980.4,
+    "progress_percent": 0.39,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
       "listening": 13.5,
-      "speaking": 1.6,
+      "speaking": 2.0,
       "speaking_real": 0.0,
       "reading": 3.1,
       "writing": 1.0,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 19.2,
+      "hours": 19.6,
       "target": 33.0
     }
   },
@@ -277,7 +277,7 @@
     },
     "2026-09-24": {
       "date": "2026-09-24",
-      "hours": 3.8,
+      "hours": 4.2,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -286,9 +286,9 @@
           "is_real": false
         },
         {
-          "name": "Speaking",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Speaking / Shadowing",
+          "hours": 0.4,
+          "completed": true,
           "is_real": false
         },
         {
@@ -310,7 +310,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits.; Continued The Blacklist: S1E2, S1E3, S1E4 in one sitting.; 10-min 英語喫茶 grammar session.; 20-min Gemini session working through \"take\" collocations (take a break, take after, take on, etc.) — first use of the newly added Gemini service.; 25-min Weblio英単語 vocab session."
+      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits.; Continued The Blacklist: S1E2, S1E3, S1E4 in one sitting.; 10-min 英語喫茶 grammar session.; 20-min Gemini session working through \"take\" collocations (take a break, take after, take on, etc.) — first use of the newly added Gemini service.; 25-min follow-up: spoke the \"take\" vocabulary aloud, 3x repetition each — turning the Gemini vocab session into an output/pronunciation rep, not just recognition.; 25-min Weblio英単語 vocab session."
     },
     "2026-09-25": {
       "date": "2026-09-25",
@@ -697,11 +697,11 @@
     "currency": "JPY",
     "total_invested_yen": 16686,
     "monthly_spend_yen": 3490,
-    "total_hours_from_paid_tools": 19.2,
-    "cost_per_hour_yen": 869.06,
+    "total_hours_from_paid_tools": 19.6,
+    "cost_per_hour_yen": 851.33,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 74880.0,
-    "tco_yen": 91566.0,
+    "time_value_yen": 76440.0,
+    "tco_yen": 93126.0,
     "breakdown": [
       {
         "id": "netflix",
