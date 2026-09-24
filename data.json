@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 4,
     "days_remaining": 1516,
-    "last_updated": "2026-09-24 08:15:05"
+    "last_updated": "2026-09-24 20:20:53"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 16.2,
-    "remaining_hours": 4983.8,
-    "progress_percent": 0.32,
+    "total_hours": 18.5,
+    "remaining_hours": 4981.5,
+    "progress_percent": 0.37,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 11.4,
+      "listening": 13.5,
       "speaking": 1.6,
       "speaking_real": 0.0,
-      "reading": 2.2,
+      "reading": 2.4,
       "writing": 1.0,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 16.2,
+      "hours": 18.5,
       "target": 33.0
     }
   },
@@ -277,11 +277,11 @@
     },
     "2026-09-24": {
       "date": "2026-09-24",
-      "hours": 0.8,
+      "hours": 3.1,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 0.8,
+          "hours": 2.9,
           "completed": true,
           "is_real": false
         },
@@ -292,13 +292,13 @@
           "is_real": false
         },
         {
-          "name": "Reading / Vocab",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Reading / Grammar",
+          "hours": 0.2,
+          "completed": true,
           "is_real": false
         }
       ],
-      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits."
+      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits.; Continued The Blacklist: S1E2, S1E3, S1E4 in one sitting.; 10-min 英語喫茶 grammar session."
     },
     "2026-09-25": {
       "date": "2026-09-25",
@@ -674,11 +674,11 @@
     "currency": "JPY",
     "total_invested_yen": 14786,
     "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 16.2,
-    "cost_per_hour_yen": 912.72,
+    "total_hours_from_paid_tools": 18.5,
+    "cost_per_hour_yen": 799.24,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 63180.0,
-    "tco_yen": 77966.0,
+    "time_value_yen": 72150.0,
+    "tco_yen": 86936.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -689,8 +689,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 7.5,
-        "cost_per_hour_yen": 212.0,
+        "hours_logged": 9.6,
+        "cost_per_hour_yen": 165.62,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -754,7 +754,7 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 0,
-        "hours_logged": 0.5,
+        "hours_logged": 0.7,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar textbook-style multiple-choice drills"
       },
