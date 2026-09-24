@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 4,
     "days_remaining": 1516,
-    "last_updated": "2026-09-24 20:20:53"
+    "last_updated": "2026-09-24 21:31:59"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,9 +39,9 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 18.5,
-    "remaining_hours": 4981.5,
-    "progress_percent": 0.37,
+    "total_hours": 19.2,
+    "remaining_hours": 4980.8,
+    "progress_percent": 0.38,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
@@ -49,7 +49,7 @@
       "listening": 13.5,
       "speaking": 1.6,
       "speaking_real": 0.0,
-      "reading": 2.4,
+      "reading": 3.1,
       "writing": 1.0,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 18.5,
+      "hours": 19.2,
       "target": 33.0
     }
   },
@@ -277,7 +277,7 @@
     },
     "2026-09-24": {
       "date": "2026-09-24",
-      "hours": 3.1,
+      "hours": 3.8,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -296,9 +296,21 @@
           "hours": 0.2,
           "completed": true,
           "is_real": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.4,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.3,
+          "completed": true,
+          "is_real": false
         }
       ],
-      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits.; Continued The Blacklist: S1E2, S1E3, S1E4 in one sitting.; 10-min 英語喫茶 grammar session."
+      "notes": "Day 4 kickoff: started The Lincoln Lawyer S1E1 — another legal drama, similar register to Suits.; Continued The Blacklist: S1E2, S1E3, S1E4 in one sitting.; 10-min 英語喫茶 grammar session.; 20-min Gemini session working through \"take\" collocations (take a break, take after, take on, etc.) — first use of the newly added Gemini service.; 25-min Weblio英単語 vocab session."
     },
     "2026-09-25": {
       "date": "2026-09-25",
@@ -635,6 +647,17 @@
         "note": "Voice mode conversation practice"
       },
       {
+        "id": "gemini",
+        "provider": "Google LLC",
+        "service": "Gemini (Google Workspace Standard)",
+        "plan": "Google Workspace Standard",
+        "monthly_yen": 1900,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Vocab",
+        "note": "Vocabulary/collocation self-study with Gemini (e.g. verb usage patterns like \"take\"). Cost is the full Workspace Standard plan, not Gemini-specific pricing."
+      },
+      {
         "id": "englishcafe",
         "provider": "EnglishCafe.jp",
         "service": "英語喫茶 (EnglishCafe.jp)",
@@ -672,13 +695,13 @@
   },
   "roi": {
     "currency": "JPY",
-    "total_invested_yen": 14786,
-    "monthly_spend_yen": 1590,
-    "total_hours_from_paid_tools": 18.5,
-    "cost_per_hour_yen": 799.24,
+    "total_invested_yen": 16686,
+    "monthly_spend_yen": 3490,
+    "total_hours_from_paid_tools": 19.2,
+    "cost_per_hour_yen": 869.06,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 72150.0,
-    "tco_yen": 86936.0,
+    "time_value_yen": 74880.0,
+    "tco_yen": 91566.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -746,6 +769,19 @@
         "note": "Voice mode conversation practice"
       },
       {
+        "id": "gemini",
+        "service": "Gemini (Google Workspace Standard)",
+        "provider": "Google LLC",
+        "plan": "Google Workspace Standard",
+        "category": "Reading / Vocab",
+        "monthly_yen": 1900,
+        "months_active": 1,
+        "total_yen": 1900,
+        "hours_logged": 0.3,
+        "cost_per_hour_yen": 6333.33,
+        "note": "Vocabulary/collocation self-study with Gemini (e.g. verb usage patterns like \"take\"). Cost is the full Workspace Standard plan, not Gemini-specific pricing."
+      },
+      {
         "id": "englishcafe",
         "service": "英語喫茶 (EnglishCafe.jp)",
         "provider": "EnglishCafe.jp",
@@ -767,7 +803,7 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 0,
-        "hours_logged": 0.6,
+        "hours_logged": 1.0,
         "cost_per_hour_yen": 0.0,
         "note": "Free campaign 2026-09-22 to 2026-11-20. Becomes ¥330/mo (tax incl.) from 2026-11-21 — update monthly_yen to 330 and split into a new entry starting 2026-11 once billing begins."
       },
