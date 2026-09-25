@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 5,
     "days_remaining": 1515,
-    "last_updated": "2026-09-25 08:34:37"
+    "last_updated": "2026-09-25 11:28:52"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 20.6,
-    "remaining_hours": 4979.4,
-    "progress_percent": 0.41,
+    "total_hours": 22.1,
+    "remaining_hours": 4977.9,
+    "progress_percent": 0.44,
     "current_phase_id": 1,
     "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 14.2,
+      "listening": 15.6,
       "speaking": 2.0,
       "speaking_real": 0.0,
-      "reading": 3.3,
+      "reading": 3.4,
       "writing": 1.1,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 20.6,
+      "hours": 22.1,
       "target": 33.0
     }
   },
@@ -314,11 +314,11 @@
     },
     "2026-09-25": {
       "date": "2026-09-25",
-      "hours": 1.0,
+      "hours": 2.5,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 0.7,
+          "hours": 2.1,
           "completed": true,
           "is_real": false
         },
@@ -335,13 +335,19 @@
           "is_real": false
         },
         {
+          "name": "Reading / Vocab",
+          "hours": 0.1,
+          "completed": true,
+          "is_real": false
+        },
+        {
           "name": "Writing / Journal",
           "hours": 0.1,
           "completed": true,
           "is_real": false
         }
       ],
-      "notes": "Day 5 kickoff: The Mentalist S1E2 (Netflix, English audio).; Quick 5-min diary review of yesterday's \"take\" collocations — spaced repetition via writing, not just re-reading.; 英語喫茶, Day 4 of the drill series: modal verbs basics ① — shall/should, may/might."
+      "notes": "Day 5 kickoff: The Mentalist S1E2 (Netflix, English audio).; Quick 5-min diary review of yesterday's \"take\" collocations — spaced repetition via writing, not just re-reading.; 英語喫茶, Day 4 of the drill series: modal verbs basics ① — shall/should, may/might.; 5-min Duolingo lesson combining speaking output and vocabulary.; Continued The Mentalist: S1E3 and S1E4."
     },
     "2026-09-26": {
       "date": "2026-09-26",
@@ -703,11 +709,11 @@
     "currency": "JPY",
     "total_invested_yen": 16389,
     "monthly_spend_yen": 3490,
-    "total_hours_from_paid_tools": 20.6,
-    "cost_per_hour_yen": 795.58,
+    "total_hours_from_paid_tools": 22.1,
+    "cost_per_hour_yen": 741.58,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 80340.0,
-    "tco_yen": 96729.0,
+    "time_value_yen": 86190.0,
+    "tco_yen": 102579.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -718,8 +724,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 10.3,
-        "cost_per_hour_yen": 154.37,
+        "hours_logged": 11.7,
+        "cost_per_hour_yen": 135.9,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -731,7 +737,7 @@
         "monthly_yen": 0,
         "months_active": 1,
         "total_yen": 0,
-        "hours_logged": 0.2,
+        "hours_logged": 0.3,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar/vocab drill lessons"
       },
