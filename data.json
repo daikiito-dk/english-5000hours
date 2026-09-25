@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 5,
     "days_remaining": 1515,
-    "last_updated": "2026-09-25 12:52:49"
+    "last_updated": "2026-09-25 21:34:29"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,9 +39,9 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 23.5,
-    "remaining_hours": 4976.5,
-    "progress_percent": 0.47,
+    "total_hours": 24.0,
+    "remaining_hours": 4976.0,
+    "progress_percent": 0.48,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
@@ -49,7 +49,7 @@
       "listening": 17.0,
       "speaking": 2.0,
       "speaking_real": 0.0,
-      "reading": 3.4,
+      "reading": 3.9,
       "writing": 1.1,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 23.5,
+      "hours": 24.0,
       "target": 33.0
     }
   },
@@ -314,7 +314,7 @@
     },
     "2026-09-25": {
       "date": "2026-09-25",
-      "hours": 3.9,
+      "hours": 4.4,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -335,6 +335,12 @@
           "is_real": false
         },
         {
+          "name": "Reading / Grammar",
+          "hours": 0.5,
+          "completed": true,
+          "is_real": false
+        },
+        {
           "name": "Reading / Vocab",
           "hours": 0.1,
           "completed": true,
@@ -347,7 +353,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 5 kickoff: The Mentalist S1E2 (Netflix, English audio).; Quick 5-min diary review of yesterday's \"take\" collocations — spaced repetition via writing, not just re-reading.; 英語喫茶, Day 4 of the drill series: modal verbs basics ① — shall/should, may/might.; 5-min Duolingo lesson combining speaking output and vocabulary.; Continued The Mentalist: S1E3 and S1E4.; Continued The Mentalist: S1E5 and S1E6 — a full binge day for this show."
+      "notes": "Day 5 kickoff: The Mentalist S1E2 (Netflix, English audio).; Quick 5-min diary review of yesterday's \"take\" collocations — spaced repetition via writing, not just re-reading.; 英語喫茶, Day 4 of the drill series: modal verbs basics ① — shall/should, may/might.; 5-min Duolingo lesson combining speaking output and vocabulary.; Continued The Mentalist: S1E3 and S1E4.; 30-min Lingoni ENGLISH (YouTube) grammar session — second visit to this channel.; Continued The Mentalist: S1E5 and S1E6 — a full binge day for this show."
     },
     "2026-09-26": {
       "date": "2026-09-26",
@@ -709,11 +715,11 @@
     "currency": "JPY",
     "total_invested_yen": 16389,
     "monthly_spend_yen": 3490,
-    "total_hours_from_paid_tools": 23.5,
-    "cost_per_hour_yen": 697.4,
+    "total_hours_from_paid_tools": 24.0,
+    "cost_per_hour_yen": 682.88,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 91650.0,
-    "tco_yen": 108039.0,
+    "time_value_yen": 93600.0,
+    "tco_yen": 109989.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -828,8 +834,8 @@
         "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 1.5,
-        "cost_per_hour_yen": 8533.33,
+        "hours_logged": 2.0,
+        "cost_per_hour_yen": 6400.0,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       }
     ]
