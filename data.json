@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 6,
     "days_remaining": 1514,
-    "last_updated": "2026-09-26 14:57:16"
+    "last_updated": "2026-09-26 22:21:53"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 27.1,
-    "remaining_hours": 4972.9,
-    "progress_percent": 0.54,
+    "total_hours": 27.8,
+    "remaining_hours": 4972.2,
+    "progress_percent": 0.56,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 19.1,
+      "listening": 19.8,
       "speaking": 2.0,
       "speaking_real": 0.0,
       "reading": 4.9,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 27.1,
+      "hours": 27.8,
       "target": 33.0
     }
   },
@@ -357,11 +357,11 @@
     },
     "2026-09-26": {
       "date": "2026-09-26",
-      "hours": 2.4,
+      "hours": 3.1,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.4,
+          "hours": 2.1,
           "completed": true,
           "is_real": false
         },
@@ -378,7 +378,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 6: 1h dictation + lookup session on Mentalist dialogue — same method as the Suits vocab session on Day 1, applied to a new show.; Started a new show: Breaking Bad, S1E1 and S1E2."
+      "notes": "Day 6: 1h dictation + lookup session on Mentalist dialogue — same method as the Suits vocab session on Day 1, applied to a new show.; Started a new show: Breaking Bad, S1E1 and S1E2.; Also started Bones, S1E1 — a second new procedural drama today."
     },
     "2026-09-27": {
       "date": "2026-09-27",
@@ -715,11 +715,11 @@
     "currency": "JPY",
     "total_invested_yen": 16389,
     "monthly_spend_yen": 3490,
-    "total_hours_from_paid_tools": 27.1,
-    "cost_per_hour_yen": 604.76,
+    "total_hours_from_paid_tools": 27.8,
+    "cost_per_hour_yen": 589.53,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 105690.0,
-    "tco_yen": 122079.0,
+    "time_value_yen": 108420.0,
+    "tco_yen": 124809.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -730,8 +730,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 15.2,
-        "cost_per_hour_yen": 104.61,
+        "hours_logged": 15.9,
+        "cost_per_hour_yen": 100.0,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
