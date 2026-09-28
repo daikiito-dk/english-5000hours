@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 8,
     "days_remaining": 1512,
-    "last_updated": "2026-09-28 17:01:56"
+    "last_updated": "2026-09-28 21:52:09"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 34.7,
-    "remaining_hours": 4965.3,
-    "progress_percent": 0.69,
+    "total_hours": 36.6,
+    "remaining_hours": 4963.4,
+    "progress_percent": 0.73,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 23.3,
-      "speaking": 3.6,
+      "listening": 25.0,
+      "speaking": 3.8,
       "speaking_real": 0.0,
       "reading": 6.7,
       "writing": 1.1,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 34.7,
+      "hours": 36.6,
       "target": 33.0
     }
   },
@@ -431,23 +431,29 @@
     },
     "2026-09-28": {
       "date": "2026-09-28",
-      "hours": 2.3,
+      "hours": 4.2,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.1,
+          "hours": 2.2,
           "completed": true,
           "is_real": false
         },
         {
           "name": "Listening / YouTube",
-          "hours": 0.3,
+          "hours": 0.9,
           "completed": true,
           "is_real": false
         },
         {
           "name": "Speaking / Online Conversation",
           "hours": 0.3,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Speaking / Pronunciation",
+          "hours": 0.2,
           "completed": true,
           "is_real": false
         },
@@ -464,7 +470,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time.; Started a new show: Ghosts, S1E1.; Also started The Closer, S1E1.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
+      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time.; Started a new show: Ghosts, S1E1.; Also started The Closer, S1E1.; 15-min pronunciation lesson on YouTube — directly targets the Phase 1 pronunciation gap ([#5](https://github.com/daikiito-dk/english-5000hours/issues/5)).; 13-min \"60 Minutes\" documentary segment on YouTube — news/documentary register, different from drama and lesson content.; \"Harold and the Purple Crayon\" Ep.2 (22 min) on YouTube.; And Resident Alien, S1E1 — third new show today.; Back to Rick and Morty for S1E3.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
     },
     "2026-09-29": {
       "date": "2026-09-29",
@@ -771,11 +777,11 @@
     "currency": "JPY",
     "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 34.7,
-    "cost_per_hour_yen": 509.19,
+    "total_hours_from_paid_tools": 36.6,
+    "cost_per_hour_yen": 482.76,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 135330.0,
-    "tco_yen": 152999.0,
+    "time_value_yen": 142740.0,
+    "tco_yen": 160409.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -786,8 +792,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 18.8,
-        "cost_per_hour_yen": 84.57,
+        "hours_logged": 19.9,
+        "cost_per_hour_yen": 79.9,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -903,8 +909,8 @@
         "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 2.8,
-        "cost_per_hour_yen": 4571.43,
+        "hours_logged": 3.6,
+        "cost_per_hour_yen": 3555.56,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       },
       {
