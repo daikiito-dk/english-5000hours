@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 8,
     "days_remaining": 1512,
-    "last_updated": "2026-09-28 16:28:45"
+    "last_updated": "2026-09-28 17:01:56"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 34.0,
-    "remaining_hours": 4966.0,
-    "progress_percent": 0.68,
+    "total_hours": 34.7,
+    "remaining_hours": 4965.3,
+    "progress_percent": 0.69,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 22.6,
+      "listening": 23.3,
       "speaking": 3.6,
       "speaking_real": 0.0,
       "reading": 6.7,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 34.0,
+      "hours": 34.7,
       "target": 33.0
     }
   },
@@ -431,11 +431,11 @@
     },
     "2026-09-28": {
       "date": "2026-09-28",
-      "hours": 1.6,
+      "hours": 2.3,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 0.4,
+          "hours": 1.1,
           "completed": true,
           "is_real": false
         },
@@ -464,7 +464,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time.; Started a new show: Ghosts, S1E1.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
+      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time.; Started a new show: Ghosts, S1E1.; Also started The Closer, S1E1.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
     },
     "2026-09-29": {
       "date": "2026-09-29",
@@ -771,11 +771,11 @@
     "currency": "JPY",
     "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 34.0,
-    "cost_per_hour_yen": 519.68,
+    "total_hours_from_paid_tools": 34.7,
+    "cost_per_hour_yen": 509.19,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 132600.0,
-    "tco_yen": 150269.0,
+    "time_value_yen": 135330.0,
+    "tco_yen": 152999.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -786,8 +786,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 18.1,
-        "cost_per_hour_yen": 87.85,
+        "hours_logged": 18.8,
+        "cost_per_hour_yen": 84.57,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
