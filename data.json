@@ -5,9 +5,9 @@
     "target_date": "2030-11-18",
     "target_hours": 5000.0,
     "total_days": 1519,
-    "days_elapsed": 7,
-    "days_remaining": 1513,
-    "last_updated": "2026-09-27 22:12:49"
+    "days_elapsed": 8,
+    "days_remaining": 1512,
+    "last_updated": "2026-09-28 11:28:09"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 31.4,
-    "remaining_hours": 4968.6,
-    "progress_percent": 0.63,
+    "total_hours": 31.8,
+    "remaining_hours": 4968.2,
+    "progress_percent": 0.64,
     "current_phase_id": 1,
-    "daily_pace_required": 3.28,
+    "daily_pace_required": 3.29,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 21.9,
-      "speaking": 3.0,
+      "listening": 22.0,
+      "speaking": 3.3,
       "speaking_real": 0.0,
       "reading": 5.4,
       "writing": 1.1,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 31.4,
+      "hours": 31.8,
       "target": 33.0
     }
   },
@@ -425,18 +425,18 @@
     },
     "2026-09-28": {
       "date": "2026-09-28",
-      "hours": 0.0,
+      "hours": 0.4,
       "breakdown": [
         {
-          "name": "Listening",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Listening / YouTube",
+          "hours": 0.1,
+          "completed": true,
           "is_real": false
         },
         {
-          "name": "Speaking",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Speaking / Online Conversation",
+          "hours": 0.3,
+          "completed": true,
           "is_real": false
         },
         {
@@ -446,7 +446,7 @@
           "is_real": false
         }
       ],
-      "notes": ""
+      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening."
     },
     "2026-09-29": {
       "date": "2026-09-29",
@@ -733,11 +733,11 @@
     "currency": "JPY",
     "total_invested_yen": 16389,
     "monthly_spend_yen": 3490,
-    "total_hours_from_paid_tools": 31.4,
-    "cost_per_hour_yen": 521.94,
+    "total_hours_from_paid_tools": 31.8,
+    "cost_per_hour_yen": 515.38,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 122460.0,
-    "tco_yen": 138849.0,
+    "time_value_yen": 124020.0,
+    "tco_yen": 140409.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -852,8 +852,8 @@
         "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 2.5,
-        "cost_per_hour_yen": 5120.0,
+        "hours_logged": 2.6,
+        "cost_per_hour_yen": 4923.08,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       }
     ]
