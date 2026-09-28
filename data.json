@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 8,
     "days_remaining": 1512,
-    "last_updated": "2026-09-28 14:45:31"
+    "last_updated": "2026-09-28 14:50:23"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 32.6,
-    "remaining_hours": 4967.4,
-    "progress_percent": 0.65,
+    "total_hours": 33.6,
+    "remaining_hours": 4966.4,
+    "progress_percent": 0.67,
     "current_phase_id": 1,
-    "daily_pace_required": 3.29,
+    "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
       "listening": 22.2,
       "speaking": 3.6,
       "speaking_real": 0.0,
-      "reading": 5.7,
+      "reading": 6.7,
       "writing": 1.1,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 32.6,
+      "hours": 33.6,
       "target": 33.0
     }
   },
@@ -388,7 +388,7 @@
     },
     "2026-09-27": {
       "date": "2026-09-27",
-      "hours": 3.3,
+      "hours": 4.3,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -419,9 +419,15 @@
           "hours": 0.1,
           "completed": true,
           "is_real": false
+        },
+        {
+          "name": "Reading / Book",
+          "hours": 1.0,
+          "completed": true,
+          "is_real": false
         }
       ],
-      "notes": "Day 7 kickoff: started Rick and Morty S1E1 — animated sitcom, different register (fast, absurdist, dense wordplay) from the procedurals so far.; 10-min 英語喫茶 grammar session.; 10-min YouTube vocabulary session.; Started The Office S1E1, then 10 min into S1E2 — another sitcom, mockumentary style.; 1-hour ChatGPT voice conversation — longest Speaking rep of the project so far.; Started Wednesday S1E1 (Netflix) — a third new show today.; 5-min Duolingo lesson."
+      "notes": "Day 7 kickoff: started Rick and Morty S1E1 — animated sitcom, different register (fast, absurdist, dense wordplay) from the procedurals so far.; 10-min 英語喫茶 grammar session.; 10-min YouTube vocabulary session.; Started The Office S1E1, then 10 min into S1E2 — another sitcom, mockumentary style.; 1-hour ChatGPT voice conversation — longest Speaking rep of the project so far.; Started Wednesday S1E1 (Netflix) — a third new show today.; 5-min Duolingo lesson.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
     },
     "2026-09-28": {
       "date": "2026-09-28",
@@ -452,7 +458,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time."
+      "notes": "Day 8 kickoff: 20-min live conversation, talking through career background — good real-world rehearsal given the ongoing job search context.; Short \"Harold and the Purple Crayon\" clip on YouTube — simple children's-content listening.; Watched 10 more minutes of \"Harold and the Purple Crayon\" content on YouTube.; New material: Direct Hits SAT vocab book (Kindle Unlimited) paired with ChatGPT voice support — vocab + speaking output at the same time.; Bought and finished \"How the World's Non-English-Speaking Elite Study English\" (¥300) in one sitting — a meta read on the project itself."
     },
     "2026-09-29": {
       "date": "2026-09-29",
@@ -743,18 +749,27 @@
         "date": "2026-09-23",
         "category": "Speaking / Shadowing",
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
+      },
+      {
+        "id": "book-nonenglish-elite",
+        "name": "How the World's Non-English-Speaking Elite Study English",
+        "provider": "Book purchase",
+        "yen": 300,
+        "date": "2026-09-27",
+        "category": "Reading / Book",
+        "note": "One-time book purchase, read cover-to-cover in a single 1h session on 2026-09-27."
       }
     ]
   },
   "roi": {
     "currency": "JPY",
-    "total_invested_yen": 17369,
+    "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 32.6,
-    "cost_per_hour_yen": 532.79,
+    "total_hours_from_paid_tools": 33.6,
+    "cost_per_hour_yen": 525.86,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 127140.0,
-    "tco_yen": 144509.0,
+    "time_value_yen": 131040.0,
+    "tco_yen": 148709.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -885,6 +900,19 @@
         "hours_logged": 2.8,
         "cost_per_hour_yen": 4571.43,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
+      },
+      {
+        "id": "book-nonenglish-elite",
+        "service": "How the World's Non-English-Speaking Elite Study English",
+        "provider": "Book purchase",
+        "plan": "One-time",
+        "category": "Reading / Book",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 300,
+        "hours_logged": 1.0,
+        "cost_per_hour_yen": 300.0,
+        "note": "One-time book purchase, read cover-to-cover in a single 1h session on 2026-09-27."
       }
     ]
   },
