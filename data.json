@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 9,
     "days_remaining": 1511,
-    "last_updated": "2026-09-29 18:30:51"
+    "last_updated": "2026-09-29 19:32:58"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,18 +39,18 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 38.5,
-    "remaining_hours": 4961.5,
-    "progress_percent": 0.77,
+    "total_hours": 39.4,
+    "remaining_hours": 4960.6,
+    "progress_percent": 0.79,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 25.7,
+      "listening": 26.4,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 7.4,
-      "writing": 1.1,
+      "writing": 1.3,
       "other": 0.0
     },
     "vocabulary_count": 19,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 38.5,
+      "hours": 39.4,
       "target": 33.0
     }
   },
@@ -474,11 +474,11 @@
     },
     "2026-09-29": {
       "date": "2026-09-29",
-      "hours": 1.9,
+      "hours": 2.8,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 0.7,
+          "hours": 1.4,
           "completed": true,
           "is_real": false
         },
@@ -511,9 +511,15 @@
           "hours": 0.3,
           "completed": true,
           "is_real": false
+        },
+        {
+          "name": "Writing / Journal",
+          "hours": 0.2,
+          "completed": true,
+          "is_real": false
         }
       ],
-      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8.; 10-min general speaking practice."
+      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
     },
     "2026-09-30": {
       "date": "2026-09-30",
@@ -795,11 +801,11 @@
     "currency": "JPY",
     "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 38.5,
-    "cost_per_hour_yen": 458.94,
+    "total_hours_from_paid_tools": 39.4,
+    "cost_per_hour_yen": 448.45,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 150150.0,
-    "tco_yen": 167819.0,
+    "time_value_yen": 153660.0,
+    "tco_yen": 171329.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -810,8 +816,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 20.6,
-        "cost_per_hour_yen": 77.18,
+        "hours_logged": 21.3,
+        "cost_per_hour_yen": 74.65,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -875,8 +881,8 @@
         "monthly_yen": 1900,
         "months_active": 1,
         "total_yen": 1900,
-        "hours_logged": 0.3,
-        "cost_per_hour_yen": 6333.33,
+        "hours_logged": 0.5,
+        "cost_per_hour_yen": 3800.0,
         "note": "Vocabulary/collocation self-study with Gemini (e.g. verb usage patterns like \"take\"). Cost is the full Workspace Standard plan, not Gemini-specific pricing."
       },
       {
