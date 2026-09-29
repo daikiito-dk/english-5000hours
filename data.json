@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 9,
     "days_remaining": 1511,
-    "last_updated": "2026-09-29 19:32:58"
+    "last_updated": "2026-09-29 21:38:47"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 39.4,
-    "remaining_hours": 4960.6,
-    "progress_percent": 0.79,
+    "total_hours": 39.8,
+    "remaining_hours": 4960.2,
+    "progress_percent": 0.8,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 26.4,
+      "listening": 26.8,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 7.4,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 39.4,
+      "hours": 39.8,
       "target": 33.0
     }
   },
@@ -474,11 +474,11 @@
     },
     "2026-09-29": {
       "date": "2026-09-29",
-      "hours": 2.8,
+      "hours": 3.2,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.4,
+          "hours": 1.8,
           "completed": true,
           "is_real": false
         },
@@ -519,7 +519,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
+      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; Started Fuller House S1E2 (Netflix) — a new sitcom.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
     },
     "2026-09-30": {
       "date": "2026-09-30",
@@ -801,11 +801,11 @@
     "currency": "JPY",
     "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 39.4,
-    "cost_per_hour_yen": 448.45,
+    "total_hours_from_paid_tools": 39.8,
+    "cost_per_hour_yen": 443.94,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 153660.0,
-    "tco_yen": 171329.0,
+    "time_value_yen": 155220.0,
+    "tco_yen": 172889.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -816,8 +816,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 21.3,
-        "cost_per_hour_yen": 74.65,
+        "hours_logged": 21.7,
+        "cost_per_hour_yen": 73.27,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
