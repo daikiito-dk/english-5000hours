@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 9,
     "days_remaining": 1511,
-    "last_updated": "2026-09-29 22:01:58"
+    "last_updated": "2026-09-29 22:58:27"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,9 +39,9 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 40.2,
-    "remaining_hours": 4959.8,
-    "progress_percent": 0.8,
+    "total_hours": 40.3,
+    "remaining_hours": 4959.7,
+    "progress_percent": 0.81,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
@@ -49,7 +49,7 @@
       "listening": 27.2,
       "speaking": 4.3,
       "speaking_real": 0.0,
-      "reading": 7.4,
+      "reading": 7.5,
       "writing": 1.3,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 40.2,
+      "hours": 40.3,
       "target": 33.0
     }
   },
@@ -474,11 +474,17 @@
     },
     "2026-09-29": {
       "date": "2026-09-29",
-      "hours": 3.6,
+      "hours": 3.7,
       "breakdown": [
         {
           "name": "Listening / Drama",
           "hours": 2.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Reading / Course",
+          "hours": 0.1,
           "completed": true,
           "is_real": false
         },
@@ -519,7 +525,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; Started Fuller House S1E2 (Netflix) — a new sitcom.; Also started S.W.A.T. S1E1 (Netflix, 22 min).; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
+      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; Started Fuller House S1E2 (Netflix) — a new sitcom.; Also started S.W.A.T. S1E1 (Netflix, 22 min).; 5-min Google Skillshop session, in English — first use of this new service.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
     },
     "2026-09-30": {
       "date": "2026-09-30",
@@ -753,6 +759,17 @@
         "note": "Billed 2026-09-04 (order D01-4532764-1580242). Reading \"Direct Hits Core Vocabulary of the SAT, 5th Edition\" as the primary text."
       },
       {
+        "id": "google-skillshop",
+        "provider": "Google",
+        "service": "Google Skillshop",
+        "plan": "Free",
+        "monthly_yen": 0,
+        "start_month": "2026-09",
+        "end_month": null,
+        "category": "Reading / Course",
+        "note": "Google's free certification e-learning platform, studied in English."
+      },
+      {
         "id": "englishcafe",
         "provider": "EnglishCafe.jp",
         "service": "英語喫茶 (EnglishCafe.jp)",
@@ -801,11 +818,11 @@
     "currency": "JPY",
     "total_invested_yen": 17669,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 40.2,
-    "cost_per_hour_yen": 439.53,
+    "total_hours_from_paid_tools": 40.3,
+    "cost_per_hour_yen": 438.44,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 156780.0,
-    "tco_yen": 174449.0,
+    "time_value_yen": 157170.0,
+    "tco_yen": 174839.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -897,6 +914,19 @@
         "hours_logged": 0.6,
         "cost_per_hour_yen": 1633.33,
         "note": "Billed 2026-09-04 (order D01-4532764-1580242). Reading \"Direct Hits Core Vocabulary of the SAT, 5th Edition\" as the primary text."
+      },
+      {
+        "id": "google-skillshop",
+        "service": "Google Skillshop",
+        "provider": "Google",
+        "plan": "Free",
+        "category": "Reading / Course",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 0,
+        "hours_logged": 0.1,
+        "cost_per_hour_yen": 0.0,
+        "note": "Google's free certification e-learning platform, studied in English."
       },
       {
         "id": "englishcafe",
