@@ -1527,6 +1527,15 @@ footer a {
   white-space: nowrap;
 }
 
+/* Service name/provider is the widest, most variable-length cell (e.g. long
+   plan names). Let it wrap instead of forcing the whole table wider than its
+   card, which pushed the rightmost (¥ per Hour) column out of view. */
+.roi-table td:first-child {
+  white-space: normal;
+  min-width: 140px;
+  max-width: 200px;
+}
+
 .roi-category-tag {
   display: inline-block;
   padding: 2px 9px;
