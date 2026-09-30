@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 10,
     "days_remaining": 1510,
-    "last_updated": "2026-09-30 12:11:55"
+    "last_updated": "2026-09-30 16:11:16"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 42.3,
-    "remaining_hours": 4957.7,
-    "progress_percent": 0.85,
+    "total_hours": 43.1,
+    "remaining_hours": 4956.9,
+    "progress_percent": 0.86,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 28.7,
+      "listening": 29.5,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 8.0,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 42.3,
+      "hours": 43.1,
       "target": 33.0
     }
   },
@@ -535,11 +535,17 @@
     },
     "2026-09-30": {
       "date": "2026-09-30",
-      "hours": 1.5,
+      "hours": 2.3,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.5,
+          "hours": 2.0,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Listening / YouTube",
+          "hours": 0.3,
           "completed": true,
           "is_real": false
         },
@@ -556,7 +562,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 10 kickoff (final day of the month): started A Man on the Inside S1E1 — final new show of September.; Continued with S1E2 and S1E3."
+      "notes": "Day 10 kickoff (final day of the month): started A Man on the Inside S1E1 — final new show of September.; Continued with S1E2 and S1E3.; Started Grace and Frankie S1E1 (Netflix) — another new comedy.; 20-min YouTube session: TED talk + \"60 Minutes\" segment."
     }
   },
   "vocabulary": [
@@ -833,11 +839,11 @@
     "currency": "JPY",
     "total_invested_yen": 17969,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 42.3,
-    "cost_per_hour_yen": 424.8,
+    "total_hours_from_paid_tools": 43.1,
+    "cost_per_hour_yen": 416.91,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 164970.0,
-    "tco_yen": 182939.0,
+    "time_value_yen": 168090.0,
+    "tco_yen": 186059.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -848,8 +854,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 23.6,
-        "cost_per_hour_yen": 67.37,
+        "hours_logged": 24.1,
+        "cost_per_hour_yen": 65.98,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -978,8 +984,8 @@
         "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 3.6,
-        "cost_per_hour_yen": 3555.56,
+        "hours_logged": 3.9,
+        "cost_per_hour_yen": 3282.05,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       },
       {
