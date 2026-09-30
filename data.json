@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 10,
     "days_remaining": 1510,
-    "last_updated": "2026-09-30 16:11:16"
+    "last_updated": "2026-09-30 18:14:38"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 43.1,
-    "remaining_hours": 4956.9,
-    "progress_percent": 0.86,
+    "total_hours": 44.5,
+    "remaining_hours": 4955.5,
+    "progress_percent": 0.89,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 29.5,
+      "listening": 30.9,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 8.0,
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 43.1,
+      "hours": 44.5,
       "target": 33.0
     }
   },
@@ -535,11 +535,11 @@
     },
     "2026-09-30": {
       "date": "2026-09-30",
-      "hours": 2.3,
+      "hours": 3.7,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 2.0,
+          "hours": 3.4,
           "completed": true,
           "is_real": false
         },
@@ -562,7 +562,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 10 kickoff (final day of the month): started A Man on the Inside S1E1 — final new show of September.; Continued with S1E2 and S1E3.; Started Grace and Frankie S1E1 (Netflix) — another new comedy.; 20-min YouTube session: TED talk + \"60 Minutes\" segment."
+      "notes": "Day 10 kickoff (final day of the month): started A Man on the Inside S1E1 — final new show of September.; Continued with S1E2 and S1E3.; Started Grace and Frankie S1E1 (Netflix) — another new comedy.; 20-min YouTube session: TED talk + \"60 Minutes\" segment.; Started New Amsterdam, S1E1 and S1E2 — medical drama, new show."
     }
   },
   "vocabulary": [
@@ -839,11 +839,11 @@
     "currency": "JPY",
     "total_invested_yen": 17969,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 43.1,
-    "cost_per_hour_yen": 416.91,
+    "total_hours_from_paid_tools": 44.5,
+    "cost_per_hour_yen": 403.8,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 168090.0,
-    "tco_yen": 186059.0,
+    "time_value_yen": 173550.0,
+    "tco_yen": 191519.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -854,8 +854,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 24.1,
-        "cost_per_hour_yen": 65.98,
+        "hours_logged": 25.5,
+        "cost_per_hour_yen": 62.35,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
