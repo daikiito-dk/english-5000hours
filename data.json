@@ -5,9 +5,9 @@
     "target_date": "2030-11-18",
     "target_hours": 5000.0,
     "total_days": 1519,
-    "days_elapsed": 9,
-    "days_remaining": 1511,
-    "last_updated": "2026-09-29 22:58:27"
+    "days_elapsed": 10,
+    "days_remaining": 1510,
+    "last_updated": "2026-09-30 12:11:55"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 40.3,
-    "remaining_hours": 4959.7,
-    "progress_percent": 0.81,
+    "total_hours": 42.3,
+    "remaining_hours": 4957.7,
+    "progress_percent": 0.85,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 27.2,
+      "listening": 28.7,
       "speaking": 4.3,
       "speaking_real": 0.0,
-      "reading": 7.5,
+      "reading": 8.0,
       "writing": 1.3,
       "other": 0.0
     },
@@ -129,7 +129,7 @@
   "monthly": {
     "2026-09": {
       "month": "2026-09",
-      "hours": 40.3,
+      "hours": 42.3,
       "target": 33.0
     }
   },
@@ -474,7 +474,7 @@
     },
     "2026-09-29": {
       "date": "2026-09-29",
-      "hours": 3.7,
+      "hours": 4.2,
       "breakdown": [
         {
           "name": "Listening / Drama",
@@ -507,6 +507,12 @@
           "is_real": false
         },
         {
+          "name": "Reading / Grammar",
+          "hours": 0.5,
+          "completed": true,
+          "is_real": false
+        },
+        {
           "name": "Reading / Vocab",
           "hours": 0.2,
           "completed": true,
@@ -525,16 +531,16 @@
           "is_real": false
         }
       ],
-      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; Started Fuller House S1E2 (Netflix) — a new sitcom.; Also started S.W.A.T. S1E1 (Netflix, 22 min).; 5-min Google Skillshop session, in English — first use of this new service.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review."
+      "notes": "Day 9 kickoff: 10-min 英語喫茶 grammar session.; 10-min Weblio英単語 vocab session.; 40-min combined session: Direct Hits SAT vocab (Kindle) + ChatGPT conversational vocabulary practice — second time pairing these two.; Continued The Mentalist: S1E8, then S1E9.; Started Fuller House S1E2 (Netflix) — a new sitcom.; Also started S.W.A.T. S1E1 (Netflix, 22 min).; 5-min Google Skillshop session, in English — first use of this new service.; 10-min general speaking practice.; 15-min Gemini writing practice with correction/feedback — second Writing rep of the day type, now paired with Gemini instead of local review.; Late-night 30-min grammar study with 「ネイティブスピーカーの英文法」(¥300 book) — second one-time book purchase of the project."
     },
     "2026-09-30": {
       "date": "2026-09-30",
-      "hours": 0.0,
+      "hours": 1.5,
       "breakdown": [
         {
-          "name": "Listening",
-          "hours": 0.0,
-          "completed": false,
+          "name": "Listening / Drama",
+          "hours": 1.5,
+          "completed": true,
           "is_real": false
         },
         {
@@ -550,7 +556,7 @@
           "is_real": false
         }
       ],
-      "notes": ""
+      "notes": "Day 10 kickoff (final day of the month): started A Man on the Inside S1E1 — final new show of September.; Continued with S1E2 and S1E3."
     }
   },
   "vocabulary": [
@@ -811,18 +817,27 @@
         "date": "2026-09-27",
         "category": "Reading / Book",
         "note": "One-time book purchase, read cover-to-cover in a single 1h session on 2026-09-27."
+      },
+      {
+        "id": "book-native-speaker-grammar",
+        "name": "ネイティブスピーカーの英文法",
+        "provider": "Book purchase",
+        "yen": 300,
+        "date": "2026-09-29",
+        "category": "Reading / Grammar",
+        "note": "One-time book purchase, used as a grammar study text."
       }
     ]
   },
   "roi": {
     "currency": "JPY",
-    "total_invested_yen": 17669,
+    "total_invested_yen": 17969,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 40.3,
-    "cost_per_hour_yen": 438.44,
+    "total_hours_from_paid_tools": 42.3,
+    "cost_per_hour_yen": 424.8,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 157170.0,
-    "tco_yen": 174839.0,
+    "time_value_yen": 164970.0,
+    "tco_yen": 182939.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -833,8 +848,8 @@
         "monthly_yen": 1590,
         "months_active": 1,
         "total_yen": 1590,
-        "hours_logged": 22.1,
-        "cost_per_hour_yen": 71.95,
+        "hours_logged": 23.6,
+        "cost_per_hour_yen": 67.37,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -979,6 +994,19 @@
         "hours_logged": 1.0,
         "cost_per_hour_yen": 300.0,
         "note": "One-time book purchase, read cover-to-cover in a single 1h session on 2026-09-27."
+      },
+      {
+        "id": "book-native-speaker-grammar",
+        "service": "ネイティブスピーカーの英文法",
+        "provider": "Book purchase",
+        "plan": "One-time",
+        "category": "Reading / Grammar",
+        "monthly_yen": 0,
+        "months_active": 1,
+        "total_yen": 300,
+        "hours_logged": 0.5,
+        "cost_per_hour_yen": 600.0,
+        "note": "One-time book purchase, used as a grammar study text."
       }
     ]
   },
