@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 11,
     "days_remaining": 1509,
-    "last_updated": "2026-10-01 19:31:07"
+    "last_updated": "2026-10-01 20:46:22"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 46.2,
-    "remaining_hours": 4953.8,
-    "progress_percent": 0.92,
+    "total_hours": 46.9,
+    "remaining_hours": 4953.1,
+    "progress_percent": 0.94,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 32.6,
+      "listening": 33.3,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 8.0,
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 1.7,
+      "hours": 2.4,
       "target": 100.0
     }
   },
@@ -571,11 +571,11 @@
     },
     "2026-10-01": {
       "date": "2026-10-01",
-      "hours": 1.7,
+      "hours": 2.4,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.2,
+          "hours": 1.9,
           "completed": true,
           "is_real": false
         },
@@ -598,7 +598,7 @@
           "is_real": false
         }
       ],
-      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube."
+      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show."
     }
   },
   "vocabulary": [
@@ -875,11 +875,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 46.2,
-    "cost_per_hour_yen": 485.69,
+    "total_hours_from_paid_tools": 46.9,
+    "cost_per_hour_yen": 478.44,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 180180.0,
-    "tco_yen": 202619.0,
+    "time_value_yen": 182910.0,
+    "tco_yen": 205349.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -890,8 +890,8 @@
         "monthly_yen": 1590,
         "months_active": 2,
         "total_yen": 3180,
-        "hours_logged": 26.7,
-        "cost_per_hour_yen": 119.1,
+        "hours_logged": 27.4,
+        "cost_per_hour_yen": 116.06,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
