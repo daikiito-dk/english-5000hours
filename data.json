@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 11,
     "days_remaining": 1509,
-    "last_updated": "2026-10-01 11:16:28"
+    "last_updated": "2026-10-01 19:31:07"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 45.7,
-    "remaining_hours": 4954.3,
-    "progress_percent": 0.91,
+    "total_hours": 46.2,
+    "remaining_hours": 4953.8,
+    "progress_percent": 0.92,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 32.1,
+      "listening": 32.6,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 8.0,
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 1.2,
+      "hours": 1.7,
       "target": 100.0
     }
   },
@@ -571,11 +571,17 @@
     },
     "2026-10-01": {
       "date": "2026-10-01",
-      "hours": 1.2,
+      "hours": 1.7,
       "breakdown": [
         {
           "name": "Listening / Drama",
           "hours": 1.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Listening / YouTube",
+          "hours": 0.5,
           "completed": true,
           "is_real": false
         },
@@ -592,7 +598,7 @@
           "is_real": false
         }
       ],
-      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3."
+      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube."
     }
   },
   "vocabulary": [
@@ -869,11 +875,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 45.7,
-    "cost_per_hour_yen": 491.01,
+    "total_hours_from_paid_tools": 46.2,
+    "cost_per_hour_yen": 485.69,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 178230.0,
-    "tco_yen": 200669.0,
+    "time_value_yen": 180180.0,
+    "tco_yen": 202619.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -1014,8 +1020,8 @@
         "monthly_yen": 1066.67,
         "months_active": 1,
         "total_yen": 12800,
-        "hours_logged": 3.9,
-        "cost_per_hour_yen": 3282.05,
+        "hours_logged": 4.4,
+        "cost_per_hour_yen": 2909.09,
         "note": "Annual plan, paid upfront in full (2026-09-23, covers through ~2027-09) — ¥2,560 cheaper than 12x the ¥1,280/mo plan. Not amortized monthly since it was a single lump-sum payment (monthly_equivalent_yen is display-only, not counted in monthly_spend). Used for English-learning content, incl. shadowing practice."
       },
       {
