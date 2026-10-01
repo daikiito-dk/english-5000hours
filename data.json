@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 11,
     "days_remaining": 1509,
-    "last_updated": "2026-10-01 22:08:48"
+    "last_updated": "2026-10-01 22:27:29"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 48.0,
-    "remaining_hours": 4952.0,
+    "total_hours": 48.2,
+    "remaining_hours": 4951.8,
     "progress_percent": 0.96,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 34.1,
+      "listening": 34.3,
       "speaking": 4.3,
       "speaking_real": 0.0,
       "reading": 8.3,
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 3.5,
+      "hours": 3.7,
       "target": 100.0
     }
   },
@@ -571,11 +571,11 @@
     },
     "2026-10-01": {
       "date": "2026-10-01",
-      "hours": 3.5,
+      "hours": 3.7,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 2.7,
+          "hours": 2.9,
           "completed": true,
           "is_real": false
         },
@@ -604,7 +604,7 @@
           "is_real": false
         }
       ],
-      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show.; 10-min 英語喫茶 grammar session.; Started The Recruit S1E1 (Netflix) — new show.; 5-min Duolingo lesson."
+      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show.; 10-min 英語喫茶 grammar session.; Started The Recruit S1E1 (Netflix) — new show.; 5-min Duolingo lesson.; Watched 11 min of Kill Bill (Netflix) — first movie (vs. series) of the project."
     }
   },
   "vocabulary": [
@@ -881,11 +881,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 48.0,
-    "cost_per_hour_yen": 467.48,
+    "total_hours_from_paid_tools": 48.2,
+    "cost_per_hour_yen": 465.54,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 187200.0,
-    "tco_yen": 209639.0,
+    "time_value_yen": 187980.0,
+    "tco_yen": 210419.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -896,8 +896,8 @@
         "monthly_yen": 1590,
         "months_active": 2,
         "total_yen": 3180,
-        "hours_logged": 28.2,
-        "cost_per_hour_yen": 112.77,
+        "hours_logged": 28.4,
+        "cost_per_hour_yen": 111.97,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
