@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 11,
     "days_remaining": 1509,
-    "last_updated": "2026-10-01 20:46:22"
+    "last_updated": "2026-10-01 22:08:48"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,17 +39,17 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 46.9,
-    "remaining_hours": 4953.1,
-    "progress_percent": 0.94,
+    "total_hours": 48.0,
+    "remaining_hours": 4952.0,
+    "progress_percent": 0.96,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 33.3,
+      "listening": 34.1,
       "speaking": 4.3,
       "speaking_real": 0.0,
-      "reading": 8.0,
+      "reading": 8.3,
       "writing": 1.3,
       "other": 0.0
     },
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 2.4,
+      "hours": 3.5,
       "target": 100.0
     }
   },
@@ -571,11 +571,11 @@
     },
     "2026-10-01": {
       "date": "2026-10-01",
-      "hours": 2.4,
+      "hours": 3.5,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.9,
+          "hours": 2.7,
           "completed": true,
           "is_real": false
         },
@@ -592,13 +592,19 @@
           "is_real": false
         },
         {
+          "name": "Reading / Grammar",
+          "hours": 0.2,
+          "completed": true,
+          "is_real": false
+        },
+        {
           "name": "Reading / Vocab",
-          "hours": 0.0,
-          "completed": false,
+          "hours": 0.1,
+          "completed": true,
           "is_real": false
         }
       ],
-      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show."
+      "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show.; 10-min 英語喫茶 grammar session.; Started The Recruit S1E1 (Netflix) — new show.; 5-min Duolingo lesson."
     }
   },
   "vocabulary": [
@@ -875,11 +881,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 46.9,
-    "cost_per_hour_yen": 478.44,
+    "total_hours_from_paid_tools": 48.0,
+    "cost_per_hour_yen": 467.48,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 182910.0,
-    "tco_yen": 205349.0,
+    "time_value_yen": 187200.0,
+    "tco_yen": 209639.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -890,8 +896,8 @@
         "monthly_yen": 1590,
         "months_active": 2,
         "total_yen": 3180,
-        "hours_logged": 27.4,
-        "cost_per_hour_yen": 116.06,
+        "hours_logged": 28.2,
+        "cost_per_hour_yen": 112.77,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
@@ -903,7 +909,7 @@
         "monthly_yen": 0,
         "months_active": 2,
         "total_yen": 0,
-        "hours_logged": 0.4,
+        "hours_logged": 0.5,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar/vocab drill lessons"
       },
@@ -994,7 +1000,7 @@
         "monthly_yen": 0,
         "months_active": 2,
         "total_yen": 0,
-        "hours_logged": 1.3,
+        "hours_logged": 1.5,
         "cost_per_hour_yen": 0.0,
         "note": "Grammar textbook-style multiple-choice drills"
       },
