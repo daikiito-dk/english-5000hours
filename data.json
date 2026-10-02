@@ -7,7 +7,7 @@
     "total_days": 1519,
     "days_elapsed": 12,
     "days_remaining": 1508,
-    "last_updated": "2026-10-02 15:44:40"
+    "last_updated": "2026-10-02 17:20:37"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,14 +39,14 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 50.1,
-    "remaining_hours": 4949.9,
-    "progress_percent": 1.0,
+    "total_hours": 51.7,
+    "remaining_hours": 4948.3,
+    "progress_percent": 1.03,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 35.7,
+      "listening": 37.3,
       "speaking": 4.8,
       "speaking_real": 0.0,
       "reading": 8.3,
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 5.6,
+      "hours": 7.2,
       "target": 100.0
     }
   },
@@ -608,11 +608,11 @@
     },
     "2026-10-02": {
       "date": "2026-10-02",
-      "hours": 1.9,
+      "hours": 3.5,
       "breakdown": [
         {
           "name": "Listening / Drama",
-          "hours": 1.4,
+          "hours": 3.0,
           "completed": true,
           "is_real": false
         },
@@ -629,7 +629,7 @@
           "is_real": false
         }
       ],
-      "notes": "Day 2 kickoff: 30-min live conversation over Meet — another real-world accent/register to practice with, beyond Spanish and American English so far.; Started Heroes S1E1 (Netflix) — new show.; Also started Good Witch S1E1 (Netflix) — new show."
+      "notes": "Day 2 kickoff: 30-min live conversation over Meet — another real-world accent/register to practice with, beyond Spanish and American English so far.; Started Heroes S1E1 (Netflix) — new show.; Also started Good Witch S1E1 (Netflix) — new show.; And Younger S1E1 (Netflix) — third new show today.; Continued Younger: S1E2, S1E3, S1E4."
     }
   },
   "vocabulary": [
@@ -906,11 +906,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 50.1,
-    "cost_per_hour_yen": 447.88,
+    "total_hours_from_paid_tools": 51.7,
+    "cost_per_hour_yen": 434.02,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 195390.0,
-    "tco_yen": 217829.0,
+    "time_value_yen": 201630.0,
+    "tco_yen": 224069.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -921,8 +921,8 @@
         "monthly_yen": 1590,
         "months_active": 2,
         "total_yen": 3180,
-        "hours_logged": 29.8,
-        "cost_per_hour_yen": 106.71,
+        "hours_logged": 31.4,
+        "cost_per_hour_yen": 101.27,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
