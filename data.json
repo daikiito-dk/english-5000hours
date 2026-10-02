@@ -5,9 +5,9 @@
     "target_date": "2030-11-18",
     "target_hours": 5000.0,
     "total_days": 1519,
-    "days_elapsed": 11,
-    "days_remaining": 1509,
-    "last_updated": "2026-10-01 22:27:29"
+    "days_elapsed": 12,
+    "days_remaining": 1508,
+    "last_updated": "2026-10-02 15:44:40"
   },
   "baseline": {
     "start_date": "2026-09-21",
@@ -39,15 +39,15 @@
     "target_goal": "CEFR C1〜C2 / TOEIC 900+ (Professional fluency & equal debate)"
   },
   "stats": {
-    "total_hours": 48.2,
-    "remaining_hours": 4951.8,
-    "progress_percent": 0.96,
+    "total_hours": 50.1,
+    "remaining_hours": 4949.9,
+    "progress_percent": 1.0,
     "current_phase_id": 1,
     "daily_pace_required": 3.28,
     "daily_target_baseline": 3.3,
     "category_hours": {
-      "listening": 34.3,
-      "speaking": 4.3,
+      "listening": 35.7,
+      "speaking": 4.8,
       "speaking_real": 0.0,
       "reading": 8.3,
       "writing": 1.3,
@@ -134,7 +134,7 @@
     },
     "2026-10": {
       "month": "2026-10",
-      "hours": 3.7,
+      "hours": 5.6,
       "target": 100.0
     }
   },
@@ -605,6 +605,31 @@
         }
       ],
       "notes": "October kickoff! Started 30 Rock, S1E1 through S1E3.; 30-min \"60 Minutes\" session on YouTube.; Started Lucifer S1E1 (Netflix) — new show.; 10-min 英語喫茶 grammar session.; Started The Recruit S1E1 (Netflix) — new show.; 5-min Duolingo lesson.; Watched 11 min of Kill Bill (Netflix) — first movie (vs. series) of the project."
+    },
+    "2026-10-02": {
+      "date": "2026-10-02",
+      "hours": 1.9,
+      "breakdown": [
+        {
+          "name": "Listening / Drama",
+          "hours": 1.4,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Speaking / Online Conversation",
+          "hours": 0.5,
+          "completed": true,
+          "is_real": false
+        },
+        {
+          "name": "Reading / Vocab",
+          "hours": 0.0,
+          "completed": false,
+          "is_real": false
+        }
+      ],
+      "notes": "Day 2 kickoff: 30-min live conversation over Meet — another real-world accent/register to practice with, beyond Spanish and American English so far.; Started Heroes S1E1 (Netflix) — new show.; Also started Good Witch S1E1 (Netflix) — new show."
     }
   },
   "vocabulary": [
@@ -881,11 +906,11 @@
     "currency": "JPY",
     "total_invested_yen": 22439,
     "monthly_spend_yen": 4470,
-    "total_hours_from_paid_tools": 48.2,
-    "cost_per_hour_yen": 465.54,
+    "total_hours_from_paid_tools": 50.1,
+    "cost_per_hour_yen": 447.88,
     "hourly_wage_yen": 3900,
-    "time_value_yen": 187980.0,
-    "tco_yen": 210419.0,
+    "time_value_yen": 195390.0,
+    "tco_yen": 217829.0,
     "breakdown": [
       {
         "id": "netflix",
@@ -896,8 +921,8 @@
         "monthly_yen": 1590,
         "months_active": 2,
         "total_yen": 3180,
-        "hours_logged": 28.4,
-        "cost_per_hour_yen": 111.97,
+        "hours_logged": 29.8,
+        "cost_per_hour_yen": 106.71,
         "note": "Primary immersion content (English drama / documentary)"
       },
       {
